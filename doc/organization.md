@@ -6,7 +6,7 @@ initial stages of preperation for GitHub
 initial stages of preperation for GitHub
 
 
-# Kaylinn McGee 
+# Kaylyn McGee 
 initial stages of preperation for GitHub
 
 
