@@ -1,14 +1,14 @@
 # Matthew Higdon
-initial stages of preperation for GitHub
+initial stages of preparation for GitHub
 
 
 # Xiao Wang 
-initial stages of preperation for GitHub
+initial stages of preparation for GitHub
 
 
-# Kaylyn McGee 
-initial stages of preperation for GitHub
+# Kaylyn McGehee 
+initial stages of preparation for GitHub
 
 
 # Jessica Ward
-initial stages of preperation for GitHub
+initial stages of preparation for GitHub
