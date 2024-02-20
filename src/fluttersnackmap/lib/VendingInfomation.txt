@@ -1,0 +1,3 @@
+# Vending Machine Information
+### This file is used to store the vending machine location, type, item prices.
+
