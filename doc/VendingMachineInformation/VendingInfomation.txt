@@ -1,3 +1,21 @@
 # Vending Machine Information
-### This file is used to store the vending machine location, type, item prices.
+## This file is used to store the vending machine location, type. Prices will be stored differently. 
+Will read and write from this file to store location, number, and items.
+, , means next vending machine in area 
 
+Locations,Number of Vending Machines,type,Items,type,items
+
+KV 2nd floor next to elevator,2,Drink,Coca-Cola,Cherry CocaCola,Diet Coke,Sprite,Mello Yello, ,Drink,Dasani Water,Original Monster Energy
+KV 1st floor near advising offices,1,Drink,Coca-Cola,Cherry CocaCola,Diet Coke,Sprite,Mello Yello
+KV Ground floor next to stairway,1,Drink,Coca-Cola,Cherry CocaCola,Diet Coke,Sprite,Dasani Water
+KV Ground floor next to smaller gallery,3,Drink,Coca-Cola,Diet Coke,Sprite,Dasani Water,Original Monster Energy, ,Snack,To be determined, ,Snack,be determined
+HH 3rd floor across from elevator,2,Drink,Coca-Cola,Cherry CocaCola,Diet Coke,Sprite,Pibb, ,Sanck,Lays Sour Cream and Onion,Reese's Cups,To Be Determined 
+HH 2rd floor next to Breezeway,2,Drink,Coca-Cola,Cherry CocaCola,Diet Coke,Sprite,Mello Yello, ,Snack,Funyuns,Ruffles Cheddar,Nacho Cheese Doritos,Lays Oven Baked,Lays Sour Cream and Onion,To Be Determined
+US Ground floor near elevator,1,Drink,Coca-Cola,Cherry Coke,Diet Coke,Sprite,Dasani Water
+US and UC connecting hallway,3,Drink,Dasani Water,Minute Maid Lemonade,Original Monster Energy,Salted Caramel Monster Energy,Zero Ultra Monster Energy,Smart Water,Powerade, ,Snack,Cheez-It,Funyuns,Ruffles Cheddar,Ruffles Oven Baked,Lays Classic,Cheetos,Nacho Cheese Doritos,Lays Oven Baked,Oatmeal Cream Pie,Lays Sour Cream and Onion,Miss Vickies Spicy Dill Pickle,Cool Ranch Doritos,Lays BBQ Oven Bakes,Reese's Cups,Reese's Pieces,Hershey's Chocolate Bar,Twix,3 Musketeers,Snickers,Butterfinger,Oreos,Skittles,To Be Determined, ,Drink,Coca-Cola,Cherry Coke,Diet Coke,Sprite,To Be Determined
+UC 2nd floor in common area,1,Drink,Coca-Cola,Cherry Coke,Diet Coke,Sprite,Dasani Water
+Cv 2nd floor near stairway,2,Drink,Dasani Water,Minute Maid Lemonade,Powerade,Original Monster Energy, ,Drink,Coca-Cola,Cherry Coca-Cola,Diet Coke,Dasani Water,Mello Yello,Fanta
+Library 1st floor near offices,1,Drink,Coco-Cola,Diet Coke,Sprite,Cherry Coke,Pibb,Dasani Water
+PS 1st floor near stairway,2 ,Snack,Funyuns,Lays Oven Baked,Lays Classic,Cheetos,Nacho Cheese Doritos,Lays Sour Cream Onion,Lays BBQ Oven Baked,Fritos,Reese's Cups,Reese's Pieces,Mamba,Peanut Butter Crackers,Skittles,Jack Links Tender Bites,Rice Crispy Treat,To Be Determined, ,Drink,Coca-Cola,Cherry Coca-Cola,Diet Coke,Sprite,Dasani Water
+LS 1st floor near stairway,3,Drink,Dasani Water,Original Monster Energy,Ultra Blue Monster Energy,Powerade, ,Snack,Coca-Cola,Cherry Coca-Cola,Diet Coke,Sprite,Dasani Water, ,Snack,Cheddar Ruffles,Lays Sour Cream and Onion,Lays Classic,Cheetos,Nacho Cheese Doritos,Miss Vickies Spicy Dill Pickle,Cool Ranch Doritos,Reese's Cups,Reese's Pieces,Skittles,Peanut Butter Crackers,Rice Crispy Treat,To Be Determined
+LS 1st floor near stairway,2,Drink,Funyuns,Lays Classic,Cheetos,Nacho Cheese Doritos,Lays Oven Baked,Lays Sour Cream and Onion,Miss Vickies Dill Pickle,Lays BBQ Oven Baked,Reese's Cups,Reese's Pieces,Rice Crispy Treat,To Be Determined, ,Drink,Coca-Coca,Cherry Coca-Cola,Diet Coke,Sprite,Pibb
