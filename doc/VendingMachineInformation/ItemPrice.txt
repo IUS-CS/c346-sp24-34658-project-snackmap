@@ -1,0 +1,14 @@
+# Vending Machine Item Prices
+## This file is used to store the item prices 
+Will read and write from this file to store item prices
+
+Item,Prices
+
+Pibb,3.00
+Dasani Water, 
+
+
+
+
+
+
