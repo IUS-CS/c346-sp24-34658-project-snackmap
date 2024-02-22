@@ -3,7 +3,7 @@
 Will read and write from this file to store location, number, and items.
 , , means next vending machine in area 
 
-Locations,Number of Vending Machines,type,Items,type,items
+Locations,Number of Vending Machines,type,Item,price.
 
 KV 2nd floor next to elevator,2,Drink,Coca-Cola,Cherry CocaCola,Diet Coke,Sprite,Mello Yello, ,Drink,Dasani Water,Original Monster Energy
 KV 1st floor near advising offices,1,Drink,Coca-Cola,Cherry CocaCola,Diet Coke,Sprite,Mello Yello
