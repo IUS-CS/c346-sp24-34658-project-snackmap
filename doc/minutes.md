@@ -23,8 +23,8 @@ This sprint, we completed:
 
 Here are screenshots of what we did:
 
-![Thing](/docs/images/screenshot1.png?raw=true)
-![Thing](/docs/images/screenshot2.png?raw=true)
+![Thing](/doc/images/Screenshot1.png?raw=true)
+![Thing](/doc/images/Screenshot2.png?raw=true)
 
 ## Retro
 
