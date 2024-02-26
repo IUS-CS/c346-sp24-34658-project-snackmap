@@ -4,6 +4,11 @@ void main() {
   //Reads from the VendingInformation.txt file
     void readfile(){
     //Stores number of lines
+    var vendingnumps11 = Map<String, String>();
+    var vendingnumps21 = Map<String, String>();
+    var vendingnumlf11 = Map<String, String>();
+    var vendingnumlf21 = Map<String, String>();
+    var vendingnumlf31 = Map<String, String>();
     var vendingnumcv11 = Map<String, String>();
     var vendingnumcv21 = Map<String, String>();
     var vendingnumcv22 = Map<String, String>();
@@ -40,10 +45,20 @@ void main() {
 
               //vending machines named based on floor number then number on floor.
               if(vendingnum == 1){
-                vendingnumcv11[key] = value;
+                vendingnumps11[key] = value;
               }else if(vendingnum ==2){
-                vendingnumcv21[key] = value;
+                vendingnumps21[key] = value;
               }else if(vendingnum ==3){
+                vendingnumlf11[key] = value;
+              }else if(vendingnum == 4){
+                vendingnumlf21[key] = value;
+              }else if(vendingnum == 4){
+                vendingnumlf31[key] = value;
+              }else if(vendingnum == 4){
+                vendingnumcv11[key] = value;
+              }else if(vendingnum == 4){
+                vendingnumcv21[key] = value;
+              }else if(vendingnum == 4){
                 vendingnumcv22[key] = value;
               }else if(vendingnum == 4){
                 vendingnuml11[key] = value;
@@ -60,6 +75,11 @@ void main() {
 
 
     //Print put maps
+    vendingnumps11.forEach((k, v) => print("Key: $k, Value: $v"));
+    vendingnumps21.forEach((k, v) => print("Key: $k, Value: $v"));
+    vendingnumlf11.forEach((k, v) => print("Key: $k, Value: $v"));
+    vendingnumlf21.forEach((k, v) => print("Key: $k, Value: $v"));
+    vendingnumlf31.forEach((k, v) => print("Key: $k, Value: $v"));
     vendingnumcv11.forEach((k, v) => print("Key: $k, Value: $v"));
     vendingnumcv21.forEach((k, v) => print("Key: $k, Value: $v"));
     vendingnumcv22.forEach((k, v) => print("Key: $k, Value: $v"));
