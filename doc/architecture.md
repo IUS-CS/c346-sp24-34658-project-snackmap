@@ -1,9 +1,9 @@
 ## Diagram of Architeture
 
-![Thing](\doc\images\ArchitectureSAD.png?raw=true)
+![Thing](/doc/images/ArchitectureSAD.png?raw=true)
 
 
-##Description
+## Description
 
 SnackMap will utilise a UI that contains an interractble map of the campus with blips on it representing the vending machines on campus.
 When selecting a blip, It will tell you what the vending machine sells along with its price and location. 
