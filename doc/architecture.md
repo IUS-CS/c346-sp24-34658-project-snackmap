@@ -1,6 +1,6 @@
 ## Diagram of Architeture
 
-![Thing](\doc\images\Architecture_SAD.png?raw=true)
+![Thing](\doc\images\ArchitectureSAD.png?raw=true)
 
 
 ##Description
