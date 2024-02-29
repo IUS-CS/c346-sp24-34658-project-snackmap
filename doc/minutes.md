@@ -1,6 +1,6 @@
 # Sprint Ceremony Minutes
   
-Date: 2020-09-21
+Date: 2024-02-27
 
 Members present:
 
