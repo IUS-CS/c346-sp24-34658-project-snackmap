@@ -1,6 +1,15 @@
 ## Diagram of Architecture
 
-![Thing](/doc/images/ArchitectureSAD.png?raw=true)
+![Thing](/doc/images/ArchitectureDiagrams\ArchitectureSAD.png?raw=true)
+
+
+
+
+![Thing](/doc/images/ArchitectureDiagrams\VendingMachineType.png?raw=true)
+
+![Thing](/doc/images/ArchitectureDiagrams\InteractiveBlips.png?raw=true)
+![Thing](/doc/images/ArchitectureDiagrams\MapOfCampus.png?raw=true)
+
 
 
 ## Description
