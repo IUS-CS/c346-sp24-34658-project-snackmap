@@ -3,6 +3,35 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/basic.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+
+
+
+var vendingnumPS11 = Map<String, String>();
+var vendingnumPS12 = Map<String, String>();
+var vendingnumLF11 = Map<String, String>();
+var vendingnumLF12 = Map<String, String>();
+var vendingnumLF13 = Map<String, String>();
+var vendingnumLF14 = Map<String, String>();
+var vendingnumLF15 = Map<String, String>(); 
+var vendingnumCV11 = Map<String, String>();
+var vendingnumCV21 = Map<String, String>();
+var vendingnumCV22 = Map<String, String>();
+var vendingnumL11 = Map<String, String>();
+var vendingnumHH21 = Map<String, String>();
+var vendingnumHH22 = Map<String, String>();
+var vendingnumHH31 = Map<String, String>();
+var vendingnumHH32 = Map<String, String>();
+var vendingnumUCSg1 = Map<String, String>();
+var vendingnumUCS21 = Map<String, String>();
+var vendingnumU1 = Map<String, String>();
+var vendingnumU2 = Map<String, String>();
+var vendingnumU3 = Map<String, String>();
+var vendingnumKVG1 = Map<String, String>();
+var vendingnumKVG2 = Map<String, String>();
+var vendingnumKVG3 = Map<String, String>();
+var vendingnumKV21 = Map<String, String>();
+var vendingnumKV22 = Map<String, String>();
+
 void main() => runApp(const MyApp());
 
 

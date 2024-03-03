@@ -1,11 +1,18 @@
 import 'dart:io';
+//import 'package:flutter_test/flutter_test.dart';
 
-void main() {
+
+class Readandwrite{
   //Reads from the VendingInformation.txt file
-    Future<void> readfile(String filename) async {
+    Future<int> readfile(String filename) async {
       try {
         final contents = await File(filename).readAsString();
-        //Stores number of lines
+
+
+        int linecounter = 0;
+        String key = "";
+        String value = "";
+        int vendingnum = 1;
         var vendingnumPS11 = Map<String, String>();
         var vendingnumPS12 = Map<String, String>();
         var vendingnumLF11 = Map<String, String>();
@@ -31,13 +38,6 @@ void main() {
         var vendingnumKVG3 = Map<String, String>();
         var vendingnumKV21 = Map<String, String>();
         var vendingnumKV22 = Map<String, String>();
-
-
-        int linecounter = 0;
-        String key = "";
-        String value = "";
-        int vendingnum = 1;
-        
         
         //File file = File(filename);
         
@@ -125,6 +125,7 @@ void main() {
 
 
         //Print put maps
+        //Used for testing
         vendingnumPS11.forEach((k, v) => print("Key: $k, Value: $v"));
         vendingnumPS12.forEach((k, v) => print("Key: $k, Value: $v"));
         vendingnumLF11.forEach((k, v) => print("Key: $k, Value: $v"));
@@ -151,14 +152,18 @@ void main() {
         vendingnumKV21.forEach((k, v) => print("Key: $k, Value: $v"));
         vendingnumKV22.forEach((k, v) => print("Key: $k, Value: $v"));
         
-        
+        return(1);
+
+
+        //If not found
         } on FileSystemException catch (e) {
+          
           print('File not found: ${e.message}');
+          return(0);
         }
+      
     
   }
-
-
-  readfile('doc/FileInformation/VendingInformation.txt');
+  
 }
 
