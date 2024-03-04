@@ -3,6 +3,7 @@ import 'dart:io';
 //import 'package:flutter/material.dart';
 //import 'package:flutter_test/flutter_test.dart';
 
+import 'package:flutter/material.dart';
 import 'package:fluttersnackmap/globals.dart' as Globals;
 
 
@@ -109,7 +110,7 @@ mixin  ReadAndWrite{
 
         //Print put maps
         //Used for testing
-        Globals.GlobalData.vendingnumPS11.forEach((k, v) => print("Key: $k, Value: $v"));
+        Globals.GlobalData.vendingnumPS11.forEach((k, v) => debugPrint("Key: $k, Value: $v"));
         Globals.GlobalData.vendingnumPS12.forEach((k, v) => print("Key: $k, Value: $v"));
         Globals.GlobalData.vendingnumLF11.forEach((k, v) => print("Key: $k, Value: $v"));
         Globals.GlobalData.vendingnumLF12.forEach((k, v) => print("Key: $k, Value: $v"));
@@ -148,6 +149,12 @@ mixin  ReadAndWrite{
 
     
       
+}
+
+
+void main(){
+  ReadAndWrite;
+  
 }
     
 
