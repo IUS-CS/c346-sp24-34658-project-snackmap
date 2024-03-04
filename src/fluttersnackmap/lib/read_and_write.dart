@@ -6,18 +6,18 @@ import 'dart:io';
 import 'package:fluttersnackmap/globals.dart' as Globals;
 
 
-mixin  readandwrite{
+mixin  ReadAndWrite{
 
-  void readfilehelper(String filename){
-    readfile(filename);
+  void readFileHelper(String fileName){
+    readFile(fileName);
   }
   //Reads from the VendingInformation.txt file
-      int readfile(String filename){
+      int readFile(String fileName){
       try {
-        String contents = File(filename).readAsString() as String;
+        String contents = File(fileName).readAsString() as String;
 
 
-        int linecounter = 0;
+        int lineCounter = 0;
         String key = "";
         String value = "";
         int vendingnum = 1;
@@ -27,15 +27,15 @@ mixin  readandwrite{
         // read file
         //String contents = file.readAsStringSync();
         
-        List<String> contentlist = contents.split(',');
+        List<String> contentList = contents.split(',');
         
         // print file
-        for (var char in contentlist) {
+        for (var char in contentList) {
           //Skips comment lines in file
-          if(linecounter > 1){
+          if(lineCounter > 1){
               if(char != "." && char != "?"){
               //If even number
-                if(linecounter % 2 == 0){
+                if(lineCounter % 2 == 0){
                   key = char;
                 }else{
                   value = char;
@@ -99,11 +99,11 @@ mixin  readandwrite{
                 }
             }else if(char == "."){
               vendingnum++;
-              linecounter--;
+              lineCounter--;
             }
             
           }
-          linecounter++;
+          lineCounter++;
         }
 
 
@@ -145,6 +145,8 @@ mixin  readandwrite{
           return(0);
         }
     }
+
+    
       
 }
     
