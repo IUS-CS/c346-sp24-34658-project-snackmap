@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'dart:io';
 
 import 'package:fluttersnackmap/globals.dart' as Globals;
@@ -11,16 +12,27 @@ class SearchByPrice with ReadAndWrite{
   //All prices for a snack is the same
    void getVendingPriceSnack(){
 
+    Map<int,String> Cheetos = {};
+    
 
-    //Add each snack vending machine to a list then put all of the snack vending machines into a Map
-    List<String> PS12Snack = [];
+    //Add each snack vending machine to a list then put all of the snack vending machines into a List<String,String>
+    //item : [price,location]
+    Map<String,Map<int,String>> snackPrice = {};
+    Map<int,String> mapWithPrice = {};
+    
+    
+
     Globals.GlobalData.vendingnumPS12.forEach((key, value) {
-      PS12Snack.add(key);
+      String readPrice = '$value';
+      //Remove $
+      readPrice = readPrice..substring(1);
+      int price = int.parse(readPrice);
+      //Price : Location
+      mapWithPrice[price] = 'PS 1st floor near bathrooms 2';
+      
+
     });
-    List<String> LF11Snack = [];
-    Globals.GlobalData.vendingnumLF11.forEach((key, value) {
-      LF11Snack.add(key);
-    });
+    
 
     
    }

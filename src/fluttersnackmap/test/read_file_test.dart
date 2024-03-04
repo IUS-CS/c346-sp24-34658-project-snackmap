@@ -7,10 +7,10 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   group('Read file test', () {
     test('File found and successfully read', () async{
-      String filename = 'doc/FileInformation/VendingInformation.txt';
+      String fileName = 'doc/FileInformation/VendingInformation.txt';
       int expected = 1;
       try {
-        final contents = await File(filename).readAsString();
+        final contents = await File(fileName).readAsString();
         int actual = 1;
         
       } on FileSystemException catch (e) {
@@ -20,10 +20,10 @@ void main() {
       expect(expected,1);
     });
         test('File not found', () async{
-      String filename = '.txt';
+      String fileName = '.txt';
       int expected = 1;
       try {
-        final contents = await File(filename).readAsString();
+        final contents = await File(fileName).readAsString();
         int actual = 1;
       } on FileSystemException catch (e) {
           int actual = 0;
