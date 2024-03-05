@@ -4,6 +4,9 @@ import 'dart:io';
 //stores glogbaldata
 
 class GlobalData {
+  static List<String> snackList = [];
+  static List<String> drinkList = [];
+  static Map<String, String> priceMap = {};
   static Map<String, String> vendingnumPS11 = {};
   static Map<String, String> vendingnumPS12 = {};
   static Map<String, String> vendingnumLF11 = {};
