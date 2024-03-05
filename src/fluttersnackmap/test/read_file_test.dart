@@ -1,5 +1,7 @@
 import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:fluttersnackmap/globals.dart' as Globals;
+import 'package:fluttersnackmap/read_and_write.dart';
 
 
 
@@ -7,7 +9,7 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   group('Read file test', () {
     test('File found and successfully read', () async{
-      String fileName = 'doc/FileInformation/VendingInformation.txt';
+      String fileName = 'text_notes/VendingInformation.txt';
       int expected = 1;
       try {
         final contents = await File(fileName).readAsString();
@@ -20,7 +22,7 @@ void main() {
       expect(expected,1);
     });
         test('File not found', () async{
-      String fileName = '.txt';
+      String fileName = 'ty.txt';
       int expected = 1;
       try {
         final contents = await File(fileName).readAsString();
@@ -34,4 +36,6 @@ void main() {
 
   
   });
+
+  
 }
