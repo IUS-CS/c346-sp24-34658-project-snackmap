@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:fluttersnackmap/globals.dart' as Globals;
-
+import 'package:fluttersnackmap/globals.dart';
 import 'package:fluttersnackmap/read_and_write.dart';
 
 
 
 
-class getItem with ReadAndWrite{
+
+
+class GetItem with ReadAndWrite{
     //Get vending machine data
-   void getData() => readFileHelper( 'doc/FileInformation/VendingInformation.txt');
+   void getData() => readFile();
 
   //Put Items in list
    List<String> snackList = [];
@@ -16,21 +17,20 @@ class getItem with ReadAndWrite{
    void sortItem(){
     
     //get list of items in list
-    // Globals.GlobalData.vendingnumPS11.forEach((key,value){
-    //   String newKey = key.toString();
-      // if(newKey != 'PS 1st floor near bathrooms 1' || newKey != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
-      //     if(!drinkList.contains(newKey)){
-      //       drinkList.add(newKey);
-      //     }
-      //   }
-      //  });
+    GlobalData.vendingnumPS11.forEach((key,value){
+      if('$key' != 'PS 1st floor near bathrooms 1' || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
+          if(!drinkList.contains('$key')){
+            drinkList.add('$key');
+          }
+        }
+       });
 
     
       // Globals.GlobalData.vendingnumPS12.forEach((key,value){
-      // String newKey = key.toString();
-      // if(newKey != 'PS 1st floor near bathrooms 2' || newKey != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
-      //     if(!snackList.contains(newKey)){
-      //       snackList.add(newKey);
+      
+      // if('$key' != 'PS 1st floor near bathrooms 2' || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
+      //     if(!snackList.contains('$key')){
+      //       snackList.add('$key');
       //     }
       //   }
       // });
@@ -246,9 +246,9 @@ class getItem with ReadAndWrite{
       // }); 
 
 
-    for (var i = 0; i < snackList.length; i++) {
-    var currentElement = snackList[i];
-    debugPrint(currentElement);
+    for (var i = 0; i < drinkList.length; i++) {
+    var currentElement = drinkList[i];
+    print(currentElement);
    
     }      
     
@@ -256,10 +256,10 @@ class getItem with ReadAndWrite{
 }
 
 void main(){
-    final myInstance = getItem();
+    final myInstance = GetItem();
     myInstance.getData();
 
-    // final instance = getItem();
-    // instance.sortItem();
+    final instance = GetItem();
+    instance.sortItem();
 }
 
