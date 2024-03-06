@@ -261,6 +261,27 @@ class SearchByPrice{
         }
       }); 
 
+      Globals.vendingnumKVG4.forEach((key,value){
+      if('$key' != "KV ground floor near stairs 4" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
+              if('$key' == Globals.drinkList[indexCounter]){
+                priceAndLocation.add('$value');
+                priceAndLocation.add("KV ground floor near stairs 4");
+              }
+        }
+      }); 
+
+
+      Globals.vendingnumKV11.forEach((key,value){
+      if('$key' != "KV 1st floor near stairs 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
+              if('$key' == Globals.drinkList[indexCounter]){
+                priceAndLocation.add('$value');
+                priceAndLocation.add("KV 1st floor near stairs 1");
+              }
+        }
+      }); 
+
+      
+
       Globals.vendingnumKV21.forEach((key,value){
       if('$key' != "KV 2nd floor near elevator 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){

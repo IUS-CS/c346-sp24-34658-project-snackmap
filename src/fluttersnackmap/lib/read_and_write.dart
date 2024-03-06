@@ -100,8 +100,12 @@ import 'dart:convert';
                     }else if(vendingnum == 23){
                       Globals.vendingnumKVG3[key] = value;
                     }else if(vendingnum == 24){
-                      Globals.vendingnumKV21[key] = value;
+                      Globals.vendingnumKVG4[key] = value;
                     }else if(vendingnum == 25){
+                      Globals.vendingnumKV11[key] = value;
+                    }else if(vendingnum == 26){
+                      Globals.vendingnumKV21[key] = value;
+                    }else if(vendingnum == 27){
                       Globals.vendingnumKV22[key] = value;
                     }
                   }

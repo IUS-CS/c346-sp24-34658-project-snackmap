@@ -41,6 +41,8 @@ class addFullStockData{
       KVG1Vending();
       KVG2Vending();
       KVG3Vending();
+      KVG4Vending();
+      KV11Vending();
       KV21Vending();
       KV22Vending();
       snackListAdd();
@@ -424,6 +426,33 @@ void KVG3Vending(){
     Globals.vendingnumKVG3["KV Ground floor next to mini gallery 3"] = "Working";
     
 }
+
+void KVG4Vending() {
+    Globals.vendingnumKVG4 = {};
+    Globals.vendingnumKVG4["KV ground floor near stairs 4"] = "Working";
+    Globals.vendingnumKVG4["Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay"] = "Drink";
+    Globals.vendingnumKVG4["Coca-Cola"] = "1.75";
+    Globals.vendingnumKVG4["Coca-Cola Zero"] = "1.75";
+    Globals.vendingnumKVG4["Coca-Cola Diet"] = "1.75";
+    Globals.vendingnumKVG4["Coca-Cola Cherry"] = "1.75";
+    Globals.vendingnumKVG4["Sprite"] = "1.75";
+    Globals.vendingnumKVG4["Dasani"] = "1.75";
+}
+
+void KV11Vending () {
+    Globals.vendingnumKV11 = {};
+    Globals.vendingnumKV11["KV 1st floor near stairs 1"] = "Working";
+    Globals.vendingnumKV11["Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay"] = "Drink";
+    Globals.vendingnumKV11["Coca-Cola"] = "1.75";
+    Globals.vendingnumKV11["Coca-Cola Zero"] = "1.75";
+    Globals.vendingnumKV11["Coca-Cola Diet"] = "1.75";
+    Globals.vendingnumKV11["Coca-Cola Cherry"] = "1.75";
+    Globals.vendingnumKV11["Sprite"] = "1.75";
+    Globals.vendingnumKV11["Mello Yello"] = "1.75";
+}
+
+
+
 
 void KV21Vending(){
     Globals.vendingnumKV21 = {};

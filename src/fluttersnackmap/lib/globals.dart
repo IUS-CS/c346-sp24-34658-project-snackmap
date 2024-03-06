@@ -28,5 +28,7 @@ Map<String, String> vendingnumU3 = {};
 Map<String, String> vendingnumKVG1 = {};
 Map<String, String> vendingnumKVG2 = {};
 Map<String, String> vendingnumKVG3 = {};
+Map<String,String> vendingnumKVG4 = {};
+Map<String,String> vendingnumKV11 = {};
 Map<String, String> vendingnumKV21 = {};
 Map<String, String> vendingnumKV22 = {};
