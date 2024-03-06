@@ -8,11 +8,12 @@ import 'globals.dart' as Globals;
 
 class SearchByPrice{
 
+  Map<String,List> priceMap = {};
 
   Map<String,List> setUpList(){
     
     //Create a list for each snack that has price and location
-    Map<String,List> priceMap = {};
+    
     
     for(int indexCounter = 0;indexCounter < Globals.snackList.length; indexCounter++){
       List<String> priceAndLocation = [];
@@ -309,6 +310,21 @@ class SearchByPrice{
 
 
   }
+  return priceMap;
+}
+
+Map<String,List> sortPrice(Map<String,List> priceMap){
+  print(priceMap);
+  final sortedKeys = priceMap.keys.toList()..sort();
+ 
+
+  // Create a new map with the sorted keys and their corresponding values
+  final sortedMap = Map.fromEntries(sortedKeys.map((key) => MapEntry(key, priceMap[key])));
+
+  sortedMap.forEach((key, value) {
+    print('$key: $value');
+  });
+
   return priceMap;
 }
 }

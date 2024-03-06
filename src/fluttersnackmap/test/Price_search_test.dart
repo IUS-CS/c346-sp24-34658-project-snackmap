@@ -15,5 +15,12 @@ void main() {
     expect(actual,70); 
   });
 
+  test('Sorted', (){
+    addFullStockData().callAllFunctions();
+    Map<String,List> temp1 = SearchByPrice().setUpList();
+    Map<String,List> temp = SearchByPrice().sortPrice(temp1);
+    int actual = temp.length;
+    expect(actual,70); 
+  });
 
 }
