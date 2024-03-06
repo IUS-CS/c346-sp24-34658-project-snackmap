@@ -1,4 +1,5 @@
 //import 'dart:html';
+import 'dart:ffi';
 import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'dart:async';
@@ -20,19 +21,42 @@ class SearchByPrice{
         Globals.vendingnumPS11.forEach((key,value){
           if('$key' != 'PS 1st floor near bathrooms 1' || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.snackList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add('PS 1st floor near bathrooms 1');
-              }
+                if(priceAndLocation.length > 0){
+                  if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add('PS 1st floor near bathrooms 1');
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,'PS 1st floor near bathrooms 1');
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add('PS 1st floor near bathrooms 1');
+            }
+          }
+              
           }
 
         });
 
         Globals.vendingnumPS12.forEach((key,value){
           if('$key' != 'PS 1st floor near bathrooms 2' || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
+              if(priceAndLocation.length > 0){
               if('$key' == Globals.snackList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add('PS 1st floor near bathrooms 2');
-              }
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add('PS 1st floor near bathrooms 2');
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,'PS 1st floor near bathrooms 2');
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add('PS 1st floor near bathrooms 2');
+            }
+          }
         }
       });
 
@@ -40,9 +64,20 @@ class SearchByPrice{
       Globals.vendingnumLF11.forEach((key,value){
       if('$key' != 'LF 1st floor near doors 1' || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.snackList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add('LF 1st floor near doors 1');
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add('LF 1st floor near doors 1');
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,'LF 1st floor near doors 1');
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add('LF 1st floor near doors 1');
+            }
+          }
         }
       });
 
@@ -50,9 +85,20 @@ class SearchByPrice{
       Globals.vendingnumLF13.forEach((key,value){
       if('$key' != "LF 1st floor near men's bathroom 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.snackList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("LF 1st floor near men's bathroom 1");
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("LF 1st floor near men's bathroom 1");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"LF 1st floor near men's bathroom 1");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("LF 1st floor near men's bathroom 1" );
+            }
+          }
         }
       });
 
@@ -61,9 +107,20 @@ class SearchByPrice{
       Globals.vendingnumCV11.forEach((key,value){
       if('$key' != "CV 1st floor near bathrooms 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.snackList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add('CV 1st floor near bathrooms 1');
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("CV 1st floor near bathrooms 1");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"CV 1st floor near bathrooms 1");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("CV 1st floor near bathrooms 1");
+            }
+          }
         }
       });
 
@@ -72,9 +129,20 @@ class SearchByPrice{
       Globals.vendingnumHH22.forEach((key,value){
       if('$key' != "HH 2nd floor near breezeway 2" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.snackList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add('HH 2nd floor near breezeway 2');
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("HH 2nd floor near breezeway 2");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"HH 2nd floor near breezeway 2");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("HH 2nd floor near breezeway 2" );
+            }
+          }
         }
       });
       
@@ -83,9 +151,20 @@ class SearchByPrice{
       Globals.vendingnumHH32.forEach((key,value){
       if('$key' != "HH 3rd floor in common area 2" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.snackList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add('HH 3rd floor in common area 2');
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("HH 3rd floor in common area 2");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"HH 3rd floor in common area 2");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("HH 3rd floor in common area 2");
+            }
+          }
         }
       });
 
@@ -95,9 +174,20 @@ class SearchByPrice{
       Globals.vendingnumU2.forEach((key,value){
       if('$key' != "UCS and UCN connecting hallway 2" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.snackList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add('UCS and UCN connecting hallway 2');
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("UCS and UCN connecting hallway 2");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"UCS and UCN connecting hallway 2");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("UCS and UCN connecting hallway 2");
+            }
+          }
         }
       });
 
@@ -105,9 +195,20 @@ class SearchByPrice{
       Globals.vendingnumKVG2.forEach((key,value){
       if('$key' != "KV Ground floor next to mini gallery 2" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.snackList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add('KV Ground floor next to mini gallery 2');
-              }
+                if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("KV Ground floor next to mini gallery 2");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"KV Ground floor next to mini gallery 2");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("KV Ground floor next to mini gallery 2");
+            }
+          }
         }
       }); 
       
@@ -115,9 +216,20 @@ class SearchByPrice{
       Globals.vendingnumKVG3.forEach((key,value){
       if('$key' != "KV Ground floor next to mini gallery 3" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.snackList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add('KV Ground floor next to mini gallery 3');
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("KV Ground floor next to mini gallery 3");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"KV Ground floor next to mini gallery 3");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("KV Ground floor next to mini gallery 3");
+            }
+          }
         }
       }); 
 
@@ -136,9 +248,20 @@ class SearchByPrice{
         Globals.vendingnumLF12.forEach((key,value){
       if('$key' != 'LF 1st floor near doors 2' || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add('LF 1st floor near doors 2');
-              }
+                if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add('LF 1st floor near doors 2');
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,'LF 1st floor near doors 2');
+
+                }
+               }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add('LF 1st floor near doors 2');
+            }
+          }
         }
       });
 
@@ -146,18 +269,40 @@ class SearchByPrice{
       Globals.vendingnumLF12.forEach((key,value){
       if('$key' != 'LF 1st floor near doors 3' || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add('LF 1st floor near doors 3');
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add('LF 1st floor near doors 3');
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,'LF 1st floor near doors 3');
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add('LF 1st floor near doors 3');
+            }
+          }
         }
       });
 
       Globals.vendingnumLF14.forEach((key,value){
       if('$key' != "LF 1st floor near men's bathroom" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("LF 1st floor near men's bathroom");
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("LF 1st floor near men's bathroom" );
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"LF 1st floor near men's bathroom" );
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("LF 1st floor near men's bathroom" );
+            }
+          }
         }
       });
 
@@ -165,19 +310,41 @@ class SearchByPrice{
       Globals.vendingnumCV21.forEach((key,value){
       if('$key' != "CV 2nd floor near stairs 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("CV 2nd floor near stairs 1");
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("CV 2nd floor near stairs 1");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"CV 2nd floor near stairs 1");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("CV 2nd floor near stairs 1");
+            }
+          }
         }
       });
 
 
       Globals.vendingnumCV22.forEach((key,value){
-      if('$key' != "CV 2nd floor near stairs" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
+      if('$key' != "CV 2nd floor near stairs 2" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("CV 2nd floor near stairs");
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("CV 2nd floor near stairs 2");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"CV 2nd floor near stairs 2");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add( "CV 2nd floor near stairs 2");
+            }
+          }
         }
       });
 
@@ -185,9 +352,20 @@ class SearchByPrice{
       Globals.vendingnumL11.forEach((key,value){
       if('$key' != "Library 1st floor near office" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("Library 1st floor near office");
-              }
+                if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("Library 1st floor near office");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"Library 1st floor near office");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("Library 1st floor near office");
+            }
+          }
         }
       });
 
@@ -195,9 +373,20 @@ class SearchByPrice{
       Globals.vendingnumHH21.forEach((key,value){
       if('$key' != "HH 2nd floor near breezeway 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("HH 2nd floor near breezeway 1");
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add( "HH 2nd floor near breezeway 1");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1, "HH 2nd floor near breezeway 1");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("HH 2nd floor near breezeway 1");
+            }
+          }
         }
       });
 
@@ -206,18 +395,40 @@ class SearchByPrice{
       Globals.vendingnumHH31.forEach((key,value){
       if('$key' != "HH 3rd floor in common area 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("HH 3rd floor in common area 1");
-              }
+                if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("HH 3rd floor in common area 1");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"HH 3rd floor in common area 1");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("HH 3rd floor in common area 1");
+            }
+          }
         }
       });
 
       Globals.vendingnumUCSg1.forEach((key,value){
       if('$key' != "UCS Ground floor near book store" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("UCS Ground floor near book store" );
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("UCS Ground floor near book store");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"UCS Ground floor near book store");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("UCS Ground floor near book store");
+            }
+          }
         }
       });
             
@@ -225,9 +436,20 @@ class SearchByPrice{
       Globals.vendingnumUCS21.forEach((key,value){
       if('$key' != "UCS 2nd floor in common area 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
                if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("UCS 2nd floor in common area 1");
-              }
+                if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("UCS 2nd floor in common area 1");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"UCS 2nd floor in common area 1");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("UCS 2nd floor in common area 1");
+            }
+          }
         }
       });
             
@@ -235,9 +457,20 @@ class SearchByPrice{
       Globals.vendingnumU1.forEach((key,value){
       if('$key' != "UCS and UCN connecting hallway 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("UCS and UCN connecting hallway 1");
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("UCS and UCN connecting hallway 1");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"UCS and UCN connecting hallway 1");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("UCS and UCN connecting hallway 1");
+            }
+          }
         }
       });
 
@@ -245,9 +478,20 @@ class SearchByPrice{
       Globals.vendingnumU3.forEach((key,value){
       if('$key' != "UCS and UCN connecting hallway 3" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("UCS and UCN connecting hallway 3");
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("UCS and UCN connecting hallway 3");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"UCS and UCN connecting hallway 3");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("UCS and UCN connecting hallway 3");
+            }
+          }
         }
       }); 
       
@@ -256,18 +500,40 @@ class SearchByPrice{
       Globals.vendingnumKVG1.forEach((key,value){
       if('$key' != "KV Ground floor next to mini gallery 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("KV Ground floor next to mini gallery 1");
-              }
+                   if(priceAndLocation.length > 0){
+                   if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("KV Ground floor next to mini gallery 1");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"KV Ground floor next to mini gallery 1");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("KV Ground floor next to mini gallery 1");
+            }
+          }
         }
       }); 
 
       Globals.vendingnumKVG4.forEach((key,value){
       if('$key' != "KV ground floor near stairs 4" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("KV ground floor near stairs 4");
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("KV ground floor near stairs 4");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"KV ground floor near stairs 4");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("KV ground floor near stairs 4" );
+            }
+          }
         }
       }); 
 
@@ -275,9 +541,20 @@ class SearchByPrice{
       Globals.vendingnumKV11.forEach((key,value){
       if('$key' != "KV 1st floor near stairs 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("KV 1st floor near stairs 1");
-              }
+                if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("KV 1st floor near stairs 1");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"KV 1st floor near stairs 1");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("KV 1st floor near stairs 1");
+            }
+          }
         }
       }); 
 
@@ -286,9 +563,20 @@ class SearchByPrice{
       Globals.vendingnumKV21.forEach((key,value){
       if('$key' != "KV 2nd floor near elevator 1" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add("KV 2nd floor near elevator 1" );
-              }
+                 if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("KV 2nd floor near elevator 1");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"KV 2nd floor near elevator 1");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("KV 2nd floor near elevator 1");
+            }
+          }
         }
       }); 
 
@@ -297,9 +585,20 @@ class SearchByPrice{
       Globals.vendingnumKV22.forEach((key,value){
       if('$key' != "KV 2nd floor near elevator 2" || '$key' != 'Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay'){
               if('$key' == Globals.drinkList[indexCounter]){
-                priceAndLocation.add('$value');
-                priceAndLocation.add( "KV 2nd floor near elevator 2");
-              }
+                if(priceAndLocation.length > 0){
+                 if(double.parse('$value') >= double.parse(priceAndLocation[0])){
+                    priceAndLocation.add('$value');
+                    priceAndLocation.add("KV 2nd floor near elevator 2");
+                }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
+                  priceAndLocation.insert(0, '$value');
+                  priceAndLocation.insert(1,"KV 2nd floor near elevator 2");
+
+                }
+              }else{
+              priceAndLocation.add('$value');
+              priceAndLocation.add("KV 2nd floor near elevator 2");
+            }
+          }
         }
       }); 
 
@@ -314,17 +613,11 @@ class SearchByPrice{
 }
 
 Map<String,List> sortPrice(Map<String,List> priceMap){
-  print(priceMap);
   final sortedKeys = priceMap.keys.toList()..sort();
  
 
   // Create a new map with the sorted keys and their corresponding values
   final sortedMap = Map.fromEntries(sortedKeys.map((key) => MapEntry(key, priceMap[key])));
-
-  sortedMap.forEach((key, value) {
-    print('$key: $value');
-  });
-
   return priceMap;
 }
 }
