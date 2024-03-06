@@ -134,19 +134,30 @@ void main() {
       expect(actual, 1); 
     });
 
-    test('KVG3Vending', () async{
+    test('KVG3Vending', (){
       addFullStockData().KVG3Vending();
       int actual = Globals.vendingnumKVG3.length;
       expect(actual, 1); 
     });
 
-    test('KV21Vending', () async{
+    test('KVG4Vending', (){
+      addFullStockData().KVG4Vending();
+      int actual = Globals.vendingnumKVG4.length;
+      expect(actual, 8); 
+    });
+
+    test('KV11Vending', (){
+      addFullStockData().KV11Vending();
+      int actual = Globals.vendingnumKV11.length;
+      expect(actual, 8); 
+    });
+    test('KV21Vending', (){
       addFullStockData().KV21Vending();
       int actual = Globals.vendingnumKV21.length;
       expect(actual, 7); 
     });
 
-    test('KV22Vending', () async{
+    test('KV22Vending', (){
       addFullStockData().KV22Vending();
       int actual = Globals.vendingnumKV22.length;
       expect(actual, 5); 
@@ -158,13 +169,13 @@ void main() {
 
 
   group('Item List Loaded', () {
-    test('drinkList', () async{
+    test('drinkList', (){
       addFullStockData().drinkListAdd();
       int actual = Globals.drinkList.length;
       expect(actual,18);
     });
 
-    test('snackList', () async{
+    test('snackList', (){
       addFullStockData().snackListAdd();
       int actual = Globals.snackList.length;
       expect(actual,52);

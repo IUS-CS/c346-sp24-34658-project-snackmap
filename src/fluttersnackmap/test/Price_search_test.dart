@@ -8,7 +8,7 @@ import 'package:fluttersnackmap/update_globals.dart';
 
 
 void main() {
-  test('Search by price data added', () async{
+  test('Search by price data added', (){
     addFullStockData().callAllFunctions();
     Map<String,List> temp = SearchByPrice().setUpList();
     int actual = temp.length;

@@ -21,5 +21,7 @@
 , ,KV Ground floor next to mini gallery 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,$1.75,Coca-Cola Zero,$1.75,Coca-Cola Diet,$1.75,Sprite,$1.75,Dasani Water,$1.75,Monster Original Energy,$2.50
 , ,KV Ground floor next to mini gallery 2,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Snack
 , ,KV Ground floor next to mini gallery 3,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Snack
+, ,KV ground floor near stairs 4,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,$1.75,Coca-Cola zero,$1.75,Coca-Cola Diet,$1.75,Coca-Cola Cherry,$1.75,Sprite,$1.75,Dasani,$1.75
+, ,KV 1st floor near stairs 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,$1.75,Coca-Cola zero,$1.75,Coca-Cola Diet,$1.75,Coca-Cola Cherry,$1.75,Sprite,$1.75,Mello Yello,$1.75
 , ,KV 2nd floor near elevator 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,$1.75,Coca-Cola Zero,$1.75,Coca-Cola Diet,$1.75,Sprite,$1.75,Mello Yello,$1.75
 , ,KV 2nd floor near elevator 2,Out Of Order,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Dasani Water,$1.75, Monster Original Energy,$2.50,Monster Zero Ultra Energy,$2.50
