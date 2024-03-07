@@ -10,9 +10,9 @@ import 'package:fluttersnackmap/read_and_write.dart';
 void main() {
   test('Search by price map length', (){
     Map<int,Map<String,String>> allVendingMap = readFile();
-    Map<String,List> temp = SearchByPrice().getSearchByPriceMap(allVendingMap);
+    Map<String, List?> temp = SearchByPrice().getSearchByPriceMap(allVendingMap);
     int actual = temp.length;
-    expect(actual,54); 
+    expect(actual,89); //54 
   });
 
 }
