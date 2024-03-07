@@ -5,13 +5,11 @@ import 'package:fluttersnackmap/read_and_write.dart';
 
 void main() {
   group("Get vending machine maps",(){
-      test('Get PS11', (){
+      test('Get vending number 1', (){
       Map<int,Map<String,String>> allVendingMap = readFile();
       int vendingNum = 1;
       Map<String, String>? tempMap = GetData().getVendingMachineMap(allVendingMap,vendingNum);
       int actual = tempMap!.length;
-      tempMap.forEach((key, value) {
-    });
       expect(actual,8);
     });
   });
@@ -20,14 +18,14 @@ void main() {
       Map<int,Map<String,String>> allVendingMap = readFile();
       List<String> snackList = GetData().getSnackData(allVendingMap);
       int actual = snackList.length;
-      expect(actual,43);
+      expect(actual,71);
 
     });
     test("Get drink",() {
       Map<int,Map<String,String>> allVendingMap = readFile();
       List<String> drinkList = GetData().getDrinkData(allVendingMap);
       int actual = drinkList.length;
-      expect(actual,11);
+      expect(actual,18);
 
     });
   });
