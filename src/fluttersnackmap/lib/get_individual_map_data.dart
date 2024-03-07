@@ -7,6 +7,7 @@ class GetData{
   Map<String, String>? getVendingMachineMap(Map<int,Map<String,String>> allVendingMap,var vendingNum){
     //if number of the vending machine exist
     if(vendingNum > 1 && vendingNum < 28 ){
+      print(allVendingMap[vendingNum]);
       return(allVendingMap[vendingNum]);
     }
   

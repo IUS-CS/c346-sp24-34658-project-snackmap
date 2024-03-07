@@ -34,9 +34,9 @@ void main() {
     });
 
     test('allVendingMap', (){
-    Future<Map<int,Map<String,String>>> allVendingMap = readFile();
+    Map<int,Map<String,String>> allVendingMap = readFile();
     int actual = allVendingMap.length;
-    expect(actual,0);
+    expect(actual,27);
   });
 
   

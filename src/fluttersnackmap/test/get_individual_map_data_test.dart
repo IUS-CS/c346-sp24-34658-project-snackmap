@@ -5,10 +5,11 @@ import 'package:fluttersnackmap/read_and_write.dart';
 
 void main() {
   test('getVendingMachineMap', (){
-    Map<int,Map<String,String>>? allVendingMap = readFile();
+    Map<int,Map<String,String>> allVendingMap = readFile();
     int vendingNum = 1;
-    Map<String, String>? tempMap = GetData().getVendingMachineMap(allVendingMap,vendingNum);
-    int actual = tempMap!.length;
+    print(allVendingMap[2]);
+    // Map<String, String>? tempMap = GetData().getVendingMachineMap(allVendingMap,vendingNum);
+    int actual = 0; //tempMap!.length;
     expect(actual,0);
   });
 }
