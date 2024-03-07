@@ -6,8 +6,7 @@ class GetData{
 
   Map<String, String>? getVendingMachineMap(Map<int,Map<String,String>> allVendingMap,var vendingNum){
     //if number of the vending machine exist
-    if(vendingNum > 1 && vendingNum < 28 ){
-      print(allVendingMap[vendingNum]);
+    if(vendingNum > 0 && vendingNum < 28 ){
       return(allVendingMap[vendingNum]);
     }
   
@@ -16,53 +15,75 @@ class GetData{
 
   List<String> getSnackData(Map<int,Map<String,String>> allVendingMap){
     List<String> snackList = [];
-    for(int vendingNum = 0; vendingNum < 28; vendingNum++){
+  
+    for(int vendingNum = 1; vendingNum < 28; vendingNum++){
       Map<String,String> currentMap = {};
+      String type = " ";
       currentMap = getVendingMachineMap(allVendingMap, vendingNum)!;
+      int indexCounter = 1;
       currentMap.forEach((key,value){
-        //If snack type
-        if(currentMap?[key] == "Snack"){
+          if(indexCounter > 2){
+          //If snack type
+          if(type == "Snack"){
 
-          if(!snackList.isEmpty){
-            //if key is not in list add it
-            if(!snackList.contains(key)){
-              snackList.add(key);
+            if(snackList.isNotEmpty){
+              //if key is not in list add it
+              if(!snackList.contains(key)){
+                snackList.add(key);
+              }
+
+            }else{
+             snackList.add(key);
+           }
+           indexCounter++;
+           }
+          }else if(indexCounter == 2){
+            if(currentMap[key] == "Snack"){
+              type = "Snack";
             }
-
-        }
-        }
-
-
-
-  });
+          }
+          indexCounter++;
+    
+        });
   }
   return(snackList);
 
  }
 
    List<String> getDrinkData(Map<int,Map<String,String>> allVendingMap){
-    List<String> snackList = [];
-    for(int vendingNum = 0; vendingNum < 28; vendingNum++){
+    List<String> drinkList = [];
+  
+    for(int vendingNum = 1; vendingNum < 28; vendingNum++){
       Map<String,String> currentMap = {};
+      String type = " ";
       currentMap = getVendingMachineMap(allVendingMap, vendingNum)!;
+      int indexCounter = 1;
       currentMap.forEach((key,value){
-        //If snack type
-        if(currentMap?[key] == "Snack"){
-          
-          if(!snackList.isEmpty){
-            //if key is not in list add it
-            if(!snackList.contains(key)){
-              snackList.add(key);
+          if(indexCounter > 2){
+          //If snack type
+          if(type == "Drink"){
+
+            if(drinkList.isNotEmpty){
+              //if key is not in list add it
+              if(!drinkList.contains(key)){
+                drinkList.add(key);
+              }
+
+            }else{
+             drinkList.add(key);
+           }
+           indexCounter++;
+           }
+          }else if(indexCounter == 2){
+            if(currentMap[key] == "Drink"){
+              type = "Drink";
             }
-
-        }
-        }
-
-
-
-  });
+          }
+          indexCounter++;
+    
+        });
   }
-  return(snackList);
+  return(drinkList);
 
  }
 } 

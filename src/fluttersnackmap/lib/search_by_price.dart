@@ -17,7 +17,7 @@ class SearchByPrice{
     
     //Create a list for each snack that has price and location
     String type = "";
-    for(int indexCounter = 0;indexCounter < 19; indexCounter++){
+    for(int indexCounter = 0;indexCounter < drinkList.length; indexCounter++){
       Map<String,String>? currentMap = {};
       List<String> priceAndLocation = [];
       int vendingNum = 1;
@@ -61,7 +61,7 @@ class SearchByPrice{
       priceMap[drinkList[indexCounter]] = priceAndLocation;
     }
 
-  for(int indexCounter = 0;indexCounter < 59; indexCounter++){
+  for(int indexCounter = 0;indexCounter < snackList.length; indexCounter++){
       Map<String,String>? currentMap = {};
       List<String> priceAndLocation = [];
       int vendingNum = 1;
