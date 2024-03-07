@@ -60,7 +60,7 @@ flutter:
   uses-material-design: true
 
   assets:
-   - text_notes/
+   - assets/VendingInformation.txt
 
   # To add assets to your application, add an assets section, like this:
   # assets:

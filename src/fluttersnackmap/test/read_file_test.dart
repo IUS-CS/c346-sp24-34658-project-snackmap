@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fluttersnackmap/globals.dart' as Globals;
 import 'package:fluttersnackmap/read_and_write.dart';
 
 
@@ -33,6 +32,12 @@ void main() {
       }
       expect(expected,0);
     });
+
+    test('allVendingMap', (){
+    Map<int,Map<String,String>> allVendingMap = readFile();
+    int actual = allVendingMap.length;
+    expect(actual,27);
+  });
 
   
   });
