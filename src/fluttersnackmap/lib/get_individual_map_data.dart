@@ -1,7 +1,4 @@
-import 'dart:io';
-  
-  
-  //? is in case allVending map is null so that code does not crash
+//? is in case allVending map is null so that code does not crash
 class GetData{
 
   Map<String, String>? getVendingMachineMap(Map<int,Map<String,String>> allVendingMap,var vendingNum){
@@ -9,34 +6,34 @@ class GetData{
     if(vendingNum > 0 && vendingNum < 28 ){
       return(allVendingMap[vendingNum]);
     }
-  
-
+    return null;
   }
 
   List<String> getSnackData(Map<int,Map<String,String>> allVendingMap){
     List<String> snackList = [];
   
+    //For each vending number
     for(int vendingNum = 1; vendingNum < 28; vendingNum++){
       Map<String,String> currentMap = {};
       String type = " ";
       currentMap = getVendingMachineMap(allVendingMap, vendingNum)!;
       int indexCounter = 1;
+      //For each key in map
       currentMap.forEach((key,value){
           if(indexCounter > 2){
           //If snack type
           if(type == "Snack"){
-
             if(snackList.isNotEmpty){
               //if key is not in list add it
               if(!snackList.contains(key)){
                 snackList.add(key);
               }
-
             }else{
              snackList.add(key);
            }
            indexCounter++;
            }
+           //Get the machine type
           }else if(indexCounter == 2){
             if(currentMap[key] == "Snack"){
               type = "Snack";
@@ -60,7 +57,7 @@ class GetData{
       int indexCounter = 1;
       currentMap.forEach((key,value){
           if(indexCounter > 2){
-          //If snack type
+          //If drink type
           if(type == "Drink"){
 
             if(drinkList.isNotEmpty){
@@ -74,6 +71,7 @@ class GetData{
            }
            indexCounter++;
            }
+           //Get the item type
           }else if(indexCounter == 2){
             if(currentMap[key] == "Drink"){
               type = "Drink";

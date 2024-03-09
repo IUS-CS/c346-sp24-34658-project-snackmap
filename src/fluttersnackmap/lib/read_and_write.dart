@@ -1,18 +1,6 @@
 import 'dart:io';
-
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter/services.dart' show rootBundle;
-
-import 'package:flutter/material.dart';
-import 'dart:async';
-import 'dart:async';
-import 'dart:io';
-import 'dart:convert';
-
-
   //Reads from the VendingInformation.txt file
-   Map<int,Map<String,String>> readFile(){
+   Map<int,Map<String,String>> readFile(String fileName){
     int lineCounter = 0;
     String key = "";      
     String value = "";
@@ -20,7 +8,7 @@ import 'dart:convert';
     Map<String,String> vendingMap = {};
     Map<int,Map<String,String>> allVendingMap = {};
     try {
-        var contents = File('assets/VendingInformation.txt').readAsStringSync();
+        var contents = File(fileName).readAsStringSync();
 
           
           

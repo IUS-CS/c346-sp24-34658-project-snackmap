@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-// //import 'package:video_player/video_player.dart';
-import 'package:flutter/src/widgets/basic.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'dart:io';
 
 
 void main() => runApp(const MyApp());
@@ -41,13 +37,13 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       //Puts SnackMap in title 
       appBar: AppBar(
-        backgroundColor: Color(0xff3A95D1),
-        title: Center(
+        backgroundColor: const Color(0xff3A95D1),
+        title: const Center(
           child: Text('SnackMap'),
         ),
       ),
       //Displays the text
-      body: Center(
+      body: const Center(
         child: Text(
           'Will later add SnackMapLogo.mp4 Here for animation'
         ),
@@ -70,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ListTile(
-          leading: Icon(Icons.manage_search),
+          leading: const Icon(Icons.manage_search),
           title:const Text(
               'Name',
               style: TextStyle(
@@ -87,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
           },
         ),
         ListTile(
-          leading: Icon(Icons.room),
+          leading: const Icon(Icons.room),
           title: const Text(
             'Location',
               style: TextStyle(
@@ -104,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
           },
         ),
         ListTile(
-          leading: Icon(Icons.paid),
+          leading: const Icon(Icons.paid),
           title: const Text(
             'Price',
               style: TextStyle(
