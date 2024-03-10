@@ -1,107 +1,53 @@
-//import 'dart:html';
-import 'dart:ffi';
-import 'dart:io';
-import 'package:flutter_test/flutter_test.dart';
-import 'dart:async';
 import 'get_individual_map_data.dart';
 
-
-class SearchByPrice{
-
-  Map<String,List> priceMap = {};
-
-
-  Map<String, List?>  getSearchByPriceMap(Map<int,Map<String,String>> allVendingMap){
-    List<String> drinkList = GetData().getDrinkData(allVendingMap);
+class SearchByPrice {
+  Map<String, List<String>> sortByPrice(Map<int, Map<String, String>> allVendingMap) {
     List<String> snackList = GetData().getSnackData(allVendingMap);
-    
-    //Create a list for each snack that has price and location
-    String type = "";
-  for(int vendingNum = 1; vendingNum < 28; vendingNum++){
-      Map<String,String>? currentMap = {};
-      List<String> priceAndLocation = [];
-      int keyTracker = 1;
-      currentMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
-         currentMap?.forEach((key,value){
-          if(keyTracker == 2){
-            String? type = currentMap![key];
-          }else if(keyTracker > 2){
-            for(int indexCounter = 0;indexCounter < snackList.length; indexCounter++){
-              if('$key' == snackList[indexCounter]){
-                  if(priceAndLocation.isNotEmpty){
-                    //Put the list in order based on lowest price in front
-                    //If cost more add to back of list
-                    if(double.parse('$value') >= double.parse(priceAndLocation[0])){
-                      priceAndLocation.add('$value');
-                      //Add the location
-                      priceAndLocation.add(currentMap!.keys.first);
-                  //If cost less add to front
-                  }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
-                    priceAndLocation.insert(0, '$value');
-                    priceAndLocation.insert(1, currentMap!.keys.first);
+    List<String> drinkList = GetData().getDrinkData(allVendingMap);
+    Map<String, List<String>> itemMap = {};
+    int keyTracker = 0;
 
-                  }
-                  //if list is empty add value
-                }else{
-                  priceAndLocation.add('$value');
-                  priceAndLocation.add(currentMap!.keys.first);
-              }
+    //Add the keys to itemMap for snackList
+    for (int index = 0; index < snackList.length; index++) {
+      itemMap[snackList[index]] = [];
+    }
 
-            }
-            //For each item add to priceMap
-            priceMap[snackList[indexCounter]] = priceAndLocation;
-  
-          }
-          for(int indexCounter = 0;indexCounter < drinkList.length; indexCounter++){
-              if('$key' == drinkList[indexCounter]){
-                  if(priceAndLocation.isNotEmpty){
-                    //Put the list in order based on lowest price in front
-                    //If cost more add to back of list
-                    if(double.parse('$value') >= double.parse(priceAndLocation[0])){
-                      priceAndLocation.add('$value');
-                      //Add the location
-                      priceAndLocation.add(currentMap!.keys.first);
-                  //If cost less add to front
-                  }else if(double.parse('$value') < double.parse(priceAndLocation[0])){
-                    priceAndLocation.insert(0, '$value');
-                    priceAndLocation.insert(1, currentMap!.keys.first);
+    //Do the same for drinkList
+    for (int index = 0; index < drinkList.length; index++) {
+      itemMap[drinkList[index]] = [];
+    }
 
-                  }
-                  //if list is empty add value
-                }else{
-                  priceAndLocation.add('$value');
-                  priceAndLocation.add(currentMap!.keys.first);
+    // For each vending machine
+    for (int vendingNum = 1; vendingNum < 28; vendingNum++) {
+      Map<String, String>? currentMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
+      if (currentMap != null) {
+        currentMap.forEach((key, value) {
+          //Skips the location and payment
+          if (keyTracker > 2) {
+            // If the key is in the map
+            if (itemMap.containsKey(key)) {
+              //Add price and location to list
+              if (itemMap[key]!.isEmpty ||
+                //If value is greater than or equal to the lowest price add to end of list
+                  double.parse(itemMap[key]![0]) <= double.parse(value)) {
+                itemMap[key]!.add(value);
+                itemMap[key]!.add(currentMap.keys.first);
+                //If value is less than then add to front of list
+              } else if (double.parse(itemMap[key]![0]) > double.parse(value)) {
+                itemMap[key]!.insert(0, value);
+                itemMap[key]!.insert(1, currentMap.keys.first);
               }
             }
-              //For each item add to priceMap
-              priceMap[drinkList[indexCounter]] = priceAndLocation;
-  
           }
-          }
-          
           keyTracker++;
-         }); //for each
+        });
+      }
+    }
 
-  }
-    final sortMap = priceMap.keys.toList()..sort();
-    final sortedPriceMap = Map.fromEntries(sortMap.map((key) => MapEntry(key, priceMap[key])));
-    sortedPriceMap.forEach((key, value) {
-    print('$key: $value');
-    });
-    
-    return(sortedPriceMap);
-    
+    //Sort itemMap by the lowest value price
+    final priceMap = Map.fromEntries(itemMap.entries.toList()
+      ..sort((e1, e2) => double.parse(e1.value[0]).compareTo(double.parse(e2.value[0]))));
+
+    return priceMap;
   }
 }
-  
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-       
