@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fluttersnackmap/search_by_location.dart';
+import 'package:fluttersnackmap/search_by_price.dart';
 
 import 'package:fluttersnackmap/read_and_write.dart';
 
