@@ -1,4 +1,4 @@
-### SnackMap
+# SnackMap
 
 ![Thing](/doc/images/SnackMapLogo.png?raw=true)
 
