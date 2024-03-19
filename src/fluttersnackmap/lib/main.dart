@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'price_page.dart';
 
 
+
+//Starts the app
 void main() => runApp(const MyApp());
 
 
-
+//Builds the homepage
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -29,27 +32,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 
-class _MyHomePageState extends State<MyHomePage> {
-  
-
+//Creates the SearchDrawer
+class SearchDrawer extends StatelessWidget{
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      //Puts SnackMap in title 
-      appBar: AppBar(
-        backgroundColor: const Color(0xff3A95D1),
-        title: const Center(
-          child: Text('SnackMap'),
-        ),
-      ),
-      //Displays the text
-      body: const Center(
-        child: Text(
-          'Will later add SnackMapLogo.mp4 Here for animation'
-        ),
-      ),
-      drawer: Drawer(
-        child: 
+  Widget build(BuildContext context){
+    return Drawer(
+      child: 
         ListView(
           padding: EdgeInsets.zero,
           children: [
@@ -111,14 +99,44 @@ class _MyHomePageState extends State<MyHomePage> {
           subtitle:const Text('Search for a drink or snack by price.'),
           //tileColor: Color(0xffBDBEC0),
           onTap: (){
-            //Will later update.
-            //Closes the drawer
+            //Go to next page
             Navigator.pop(context);
+            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => PricePage()));
            },
          ),
        ],
       ),
-    ),
-  );
- }
+    );
+  }
 }
+
+
+
+
+//Has the homepage
+class _MyHomePageState extends State<MyHomePage> {
+  
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      drawer: SearchDrawer(),
+      //Puts SnackMap in title 
+      appBar: AppBar(
+        backgroundColor: const Color(0xff3A95D1),
+        title: const Center(
+          child: Text('SnackMap'),
+        ),
+      ),
+      //Displays the text
+      body: const Center(
+        child: Text(
+          'Will later add SnackMapLogo.mp4 Here for animation'
+        ),
+      )
+    
+    );
+  }
+    
+ }
+
