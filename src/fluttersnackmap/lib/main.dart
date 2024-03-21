@@ -101,7 +101,7 @@ class SearchDrawer extends StatelessWidget{
           onTap: (){
             //Go to next page
             Navigator.pop(context);
-            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => PricePage()));
+            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const PricePage()));
            },
          ),
        ],
