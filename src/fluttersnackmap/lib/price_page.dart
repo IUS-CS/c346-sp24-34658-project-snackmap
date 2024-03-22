@@ -16,25 +16,16 @@ class _ExpandingTileState extends State<PricePage> {
   static int itemCount = priceMap.length;
   static List keyList = priceMap.keys.toList();
    
-  // Generate a list of Users, You often use API or database for creation of this list
+  // Generate a list of Users, You often use API or database for creation of this list   
+  // // Generate a list of Users, You often use API or database for creation of this list
   final List<Map<String, dynamic>> _users = List.generate(
-      itemCount,
+      20,
       (index) => {
             "id": index,
-            "name": "User $keyList[$itemCount]",
+            "name": "User $index",
             "detail":
                 "User with id $index. You can write detail for expansion tile here."
           });
- 
-  // // Generate a list of Users, You often use API or database for creation of this list
-  // final List<Map<String, dynamic>> _users = List.generate(
-  //     20,
-  //     (index) => {
-  //           "id": index,
-  //           "name": "User $index",
-  //           "detail":
-  //               "User with id $index. You can write detail for expansion tile here."
-  //         });
 
 
   @override

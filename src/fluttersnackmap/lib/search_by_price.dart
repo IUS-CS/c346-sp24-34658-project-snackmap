@@ -1,3 +1,5 @@
+import 'package:fluttersnackmap/read_and_write.dart';
+
 import 'get_individual_map_data.dart';
 
 class SearchByPrice {
@@ -48,6 +50,12 @@ class SearchByPrice {
     final priceMap = Map.fromEntries(itemMap.entries.toList()
       ..sort((e1, e2) => double.parse(e1.value[0]).compareTo(double.parse(e2.value[0]))));
 
+
+    
+    
+    
+    
+    writePriceMap(priceMap);
     return priceMap;
   }
 }
