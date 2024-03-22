@@ -11,10 +11,6 @@ class PricePage extends StatefulWidget {
 }
 
 class _ExpandingTileState extends State<PricePage> {
-  static Map<int,Map<String,String>> allVendingMap = readFile('assets/VendingInformation.txt');
-  static Map<String, List<String>> priceMap = SearchByPrice().sortByPrice(allVendingMap);
-  static int itemCount = priceMap.length;
-  static List keyList = priceMap.keys.toList();
    
   // Generate a list of Users, You often use API or database for creation of this list   
   // // Generate a list of Users, You often use API or database for creation of this list
