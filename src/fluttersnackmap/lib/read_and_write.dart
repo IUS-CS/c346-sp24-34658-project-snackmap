@@ -66,13 +66,13 @@ writePriceMap(Map<String, List<String>?> priceMap)async{
   //Clears file
   f.writeAsStringSync('');
  
- // Iterate through each entry in the map
   priceMap.forEach((key, value) {
     // Write key and values
     if (value != null) {
       var valueString = value.join(", ");
       f.writeAsStringSync('$key : $valueString\n', mode: FileMode.append);
     } else {
+      
       f.writeAsStringSync('$key : null\n', mode: FileMode.append);
     }
   });
