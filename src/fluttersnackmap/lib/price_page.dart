@@ -3,8 +3,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-
-
 class PricePage extends StatefulWidget {
   const PricePage({super.key});
 
@@ -15,16 +13,17 @@ class PricePage extends StatefulWidget {
 }
 
 class MyAppScreenState extends State<PricePage> {
-  List<String> _questions = [];
+  List<String> _priceMapList = [];
 
-  Future<List<String>> _loadQuestions() async {
-    List<String> questions = [];
+  Future<List<String>> _loadpriceMapList() async {
+    List<String> priceMapList = [];
+    //Add each line in file to priceMapList
     await rootBundle.loadString('assets/PriceMap.txt').then((q) {
       for (String i in LineSplitter().convert(q)) {
-        questions.add(i);
+        priceMapList.add(i);
       }
     });
-    return questions;
+    return priceMapList;
   }
 
   @override
@@ -34,25 +33,40 @@ class MyAppScreenState extends State<PricePage> {
   }
 
   _setup() async {
-    // Retrieve the questions (Processed in the background)
-    List<String> questions = await _loadQuestions();
+    //Retrieve the priceMapList
+    List<String> priceMapList = await _loadpriceMapList();
 
-    // Notify the UI and display the questions
+    //Display the items in list
     setState(() {
-      _questions = questions;
+      _priceMapList = priceMapList;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Flutter Questions")),
+      appBar: AppBar(title: Text("Find a snack or drink by price")),
       body: Center(
         child: Container(
           child: ListView.builder(
-            itemCount: _questions.length,
+            itemCount: _priceMapList.length,
             itemBuilder: (context, index) {
-              return Text(_questions[index]);
+              //Get the item name
+              List<String> parts = _priceMapList[index].split(':');
+
+              //Get name,price,and location
+              String snackName = parts[0].trim();
+              List<String> pricesAndLocations = parts[1].trim().split(',');
+              return ExpansionTile(
+                title: Text(snackName),
+                children: <Widget>[
+                  for (String item in pricesAndLocations)
+      
+                    ListTile(
+                      title: Text('\$$item', textAlign: TextAlign.start),
+                    ),
+                ],
+              );
             },
           ),
         ),
@@ -60,6 +74,152 @@ class MyAppScreenState extends State<PricePage> {
     );
   }
 }
+
+
+// import 'dart:async';
+// import 'dart:convert';
+// import 'package:flutter/material.dart';
+// import 'package:flutter/services.dart';
+
+// class PricePage extends StatefulWidget {
+//   const PricePage({super.key});
+
+//   @override
+//   State<StatefulWidget> createState() {
+//     return MyAppScreenState();
+//   }
+// }
+
+// class MyAppScreenState extends State<PricePage> {
+//   List<String> _priceMapList = [];
+
+//   Future<List<String>> _loadpriceMapList() async {
+//     List<String> priceMapList = [];
+//     //Add each line in file to priceMapList
+//     await rootBundle.loadString('assets/PriceMap.txt').then((q) {
+//       for (String i in LineSplitter().convert(q)) {
+//         priceMapList.add(i);
+//       }
+//     });
+//     return priceMapList;
+//   }
+
+//   @override
+//   void initState() {
+//     _setup();
+//     super.initState();
+//   }
+
+//   _setup() async {
+//     //Retrieve the priceMapList
+//     List<String> priceMapList = await _loadpriceMapList();
+
+//     //Display the items in list
+//     setState(() {
+//       _priceMapList = priceMapList;
+//     });
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text("Find a snack or drink by price")),
+//       body: Center(
+//         child: Container(
+//           child: ListView.builder(
+//             itemCount: _priceMapList.length,
+//             itemBuilder: (context, index) {
+//               //Get the item name
+//               List<String> parts = _priceMapList[index].split(':');
+
+//               //Get name,price,and location
+//               String snackName = parts[0].trim();
+//               List<String> pricesAndLocations = parts[1].trim().split(',');
+//               return ExpansionTile(
+//                 title: Text(snackName),
+//                 children: <Widget>[
+                  
+//                   //For each price in priceAndLocations
+//                   for (String item in pricesAndLocations)
+//                     ListTile(
+
+//                       title: Text('\$$item'),
+//                     ),
+//                 ],
+//               );
+//             },
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
+
+
+// import 'dart:async';
+// import 'dart:convert';
+// import 'package:flutter/material.dart';
+// import 'package:flutter/services.dart';
+
+
+
+// class PricePage extends StatefulWidget {
+//   const PricePage({super.key});
+
+//   @override
+//   State<StatefulWidget> createState() {
+//     return MyAppScreenState();
+//   }
+// }
+
+// class MyAppScreenState extends State<PricePage> {
+//   List<String> _priceMapList = [];
+
+//   Future<List<String>> _loadpriceMapList() async {
+//     List<String> priceMapList = [];
+//     await rootBundle.loadString('assets/PriceMap.txt').then((q) {
+//       for (String i in LineSplitter().convert(q)) {
+//         priceMapList.add(i);
+//       }
+//     });
+//     return priceMapList;
+//   }
+
+//   @override
+//   void initState() {
+//     _setup();
+//     super.initState();
+//   }
+
+//   _setup() async {
+//     // Retrieve the questions (Processed in the background)
+//     List<String> priceMapList = await _loadpriceMapList();
+
+//     // Notify the UI and display the questions
+//     setState(() {
+//       _priceMapList = priceMapList;
+//     });
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text("Find a snack or drink by price")),
+//       body: Center(
+//         child: Container(
+//           child: ListView.builder(
+//             itemCount: _priceMapList.length,
+//             itemBuilder: (context, index) {
+//               return Text(_priceMapList[index]);
+//             },
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 
 

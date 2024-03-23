@@ -34,6 +34,8 @@ class MyHomePage extends StatefulWidget {
 
 //Creates the SearchDrawer
 class SearchDrawer extends StatelessWidget{
+  const SearchDrawer({super.key});
+
   @override
   Widget build(BuildContext context){
     return Drawer(
