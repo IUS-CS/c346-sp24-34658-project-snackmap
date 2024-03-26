@@ -60,10 +60,10 @@ class MyAppScreenState extends State<PricePage> {
               return ExpansionTile(
                 title: Text(snackName),
                 children: <Widget>[
-                  for (String item in pricesAndLocations)
-      
-                    ListTile(
-                      title: Text('\$$item', textAlign: TextAlign.start),
+                  for(int i =0; i < pricesAndLocations.length;i = i+2)
+                    
+                      ListTile(
+                      title: Text('\$${pricesAndLocations[i]} at${pricesAndLocations[i+1]}', textAlign: TextAlign.start),
                     ),
                 ],
               );
