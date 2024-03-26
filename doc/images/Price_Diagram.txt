@@ -1,0 +1,75 @@
+$1.75, Drinks
+PS 1st floor near bathrooms 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Zero,1.75,Coca-Cola Cherry,1.75,Coca-Cola Diet,1.75,Sprite,1.75,Dasani Water,1.75
+
+$1.50/$2.00/$3.00, Snacks
+PS 1st floor near bathrooms 2,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Snack,Ruffles Cheddar Cheese,1.50,Lays Sour Cream and Onion,1.50,Grippos BBQ,1.50,Pork Rinds BBQ,1.50,Lays Classic,1.50,Cheetos Crunchy,1.50,Doritos Nacho Cheese,1.50,Fritos Chili Cheese,1.50,Miss Vickies Spicy Dill Pickle Chips,1.50,Doritos Spicy Sweet Chili,1.50,Reese's Cups,2.00,Reese's Pieces,2.00,Baby Ruth,2.00,Sweet 'N Spicy Mix,2.00,Lance Grilled Cheese Crackers,2.00,Lance Peanut Butter Crackers,2.00,Skittles,2.00,Nutter Butter,2.00,Rice Krispie Treat,2.00,Pop-Tart Strawberry,3.00,Chocolate Chip Cookies,3.00,Honey Bun,3.00,Reese's Cookies,3.00
+
+$1.50/$2.00/$3.00, Snacks
+LF 1st floor near doors 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Snack,Funyuns,1.50,Cheetos,1.50,Lays Classic OvenBaked,1.50,Lays Sour Cream and Onion,1.50,Doritos Cool Ranch,1.50,Doritos BBQ,1.50,M&M's Peanuts,1.50,M&M's Peanut Butter,1.50,Nature Valley Crunchy,1.50,Reese's Cups,2.00,Reese's Pieces,2.00,Baby Ruth,2.00,Mamba,2.00,Lance Peanut Butter Crackers,2.00,Starburst Mini,2.00,Skittles,2.00,Nutter Butter,2.00,Jack Link's Prime Rib,3.00,Jack Link's Beef Teriyaki Bites,3.00
+
+$2.50, Drinks
+LF 1st floor near doors 2,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,2.50,Coca-Cola Zero,2.50,Coca-Cola Cherry,2.50,Coca-Cola Diet,2.50,Sprite,2.50,Pibb Xtra,2.50
+
+$2.00/$2.50, Drinks 
+LF 1st floor near doors 3,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Dasani Water,1.75,Monster Original Energy,2.50,Monster Zero Ultra Energy,2.50,Powerade Blue Raspberry Cherry,2.00,Powerade Fruit Punch,2.00
+
+
+$1.50/$2.00/$3.00, Snacks
+LF 1st floor near men's bathroom 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Snack,Ruffles Cheddar Cheese,1.50,Lays Sour Cream and Onion,1.50,Grippos BBQ,1.50,Pork Rinds,1.50,Ruffles Oven Baked Cheddar,1.50,Lays Original,1.50,Cheetos,1.50,Doritos Nacho Cheese,1.50,Fritos Chili Cheese,1.50,Miss Vickies Spicy Dill Pickle,1.50,Cheetos Flamin’ Hot,1.50,Doritos Cool Ranch,1.50,Doritos Spicy Sweet Chili,1.50,Fritos Twist,1.50,Reese's Cups,2.00,Reese's Pieces,2.00,Baby Ruth,2.00,Sweet 'N Spicy Mix,2.00,Starburst Mini,2.00,Lance Grilled Cheese Crackers,1.25,Lance Peanut Butter Crackers,1.25,Skittles,2.00,Nutter Butter,2.00,Rice Krispie Treat,2.00,Pop-Tart Strawberry,3.00,Chocolate Chip Cookies,3.00,Reese's Cookies,3.00
+
+$2.50, Drink
+LF 1st floor near men's bathroom 2,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,2.50,Coca-Cola Cherry,2.50,Coca-Cola Diet,2.50,Sprite,2.50,Dasani Water,2.50
+
+$1.50/$2.00/$3.00, Snacks
+CV 1st floor near bathrooms 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Snack,Cheez-It,1.50,Funyuns,1.50,Grippos BBQ,1.50,Pork Rinds BBQ,1.50,Doritos Spicy Sweet Chili,1.50,Lays Original,1.50,Cheetos Puffs,1.50,Doritos Nacho Cheese,1.50,Fritos BBQ Chips,1.50,Lays Oven Baked,1.50,Oatmeal Cream Pie,1.50,Doritos Cool Ranch,1.50,Ruffles Cheddar Cheese,1.50,Miss Vickies Spicy Dill Pickle Chips,1.50,Lays BBQ Oven Baked,1.50,Lays Sour Cream and Onion,1.50,Cheetos Crunchy Flamin’ Hot,1.50,Doritos BBQ,1.50,Ruffles Oven Baked Cheddar and Sour Cream,1.50,Lance Grilled Cheese Crackers,2.00,Lance Peanut Butter Crackers,2.00,M&M’s Peanut Butter,2.00,Peanuts,2.00,Starburst Mini,2.00,Twix,2.00,Beef Sticks,2.00,Skittles,2.00,Nutter Butter,2.00,Rice Krispie Treat,2.00,Jack Link's Beef Teriyaki Bites,3.00
+
+$1.50/$1.75/$2.00/$2.50, Drinks 
+CV 2nd floor near stairs 1,Out of Order,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Dasani Water,1.75,Minute Maid Lemonade,1.75,Mountain Berry Blast,2.00,Monster Original Energy,2.50,Monster Zero Ultra Energy,2.50,Monster Java Coffee Energy,2.50
+
+$1.75, Drinks
+CV 2nd floor near stairs 2,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Cherry,1.75,Coca-Cola Diet,1.75,Sprite,1.75,Mello Yello,1.75,Fanta,1.75
+
+$1.75, Drinks
+Library 1st floor near office,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Zero,1.75,Coca-Cola Diet,1.75,Coca-Cola Cherry,1.75,Pibb Xtra,1.75,Dasani Water,1.75
+
+$1.75, Drinks
+HH 2nd floor near breezeway 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Zero,1.75,Coca-Cola Cherry,1.75,Coca-Cola Diet,1.75,Sprite,1.75,Mello Yello,1.75
+
+$1.25/$1.50/$2.00/$2.25, Snacks    
+HH 2nd floor near breezeway 2,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Snack,Grippos BBQ,1.50,Oatmeal Cream Pie,1.25,Reese's Cups,2.00,Reese's Pieces,2.00,Baby Ruth,2.00,Belvita Crunchy,2.00,Twix,2.00,3 Musketeers,2.00,Snickers,2.00,M&M's Peanuts,2.00,Reese's Take 5,2.00,Butter Finger,2.00,Nature Valley Crunchy,2.00,Lance Peanut Butter Crackers,1.25, Salted Peanuts,2.00,Sweet 'N Spicy Mix,200,Oreo,200,Pork and Beef Sticks,200,Skittles,200,Starburst Mini,200,Cliff Chocolate Chip Cookies,2.00,Rice Krispie Treat,200,Pop-Tart Strawberry,2.25,Mamba,2.25,Chocolate Chip Cookies,2.25,5 Spearmint,2.00
+
+$1.75, Snacks
+HH 3rd floor in common area 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Zero,1.75,Coca-Cola Diet,1.75,Coca-Cola Cherry,1.75,Sprite,1.75,Pibb Xtra,1.75
+
+$1.25/$1.75/$2.00, Snacks
+HH 3rd floor in common area 2,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Snack,Pork Rinds BBQ,1.50,Reese's Cups,2.00,Reese's Pieces,2.00,Baby Ruth,2.00,Skittles,2.00,3 Musketeers,2.00,Nature Valley Crunchy,2.00,Lance Grilled Cheese Crackers,1.25,Mamba,1.25,Nutter Butter,2.00,Rice Krispie Treat,2.00,Life Savers,1.00
+
+$1.75, Drinks 
+UCS Ground floor near book store,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Zero,1.75,Coca-Cola Cherry,1.75,Coca-Cola Diet,1.75,Sprite,1.75,Dasani Water,1.75
+
+$1.75, Drinks
+UCS 2nd floor in common area 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Zero,1.75,Coca-Cola Diet,1.75,Sprite,1.75,Dasani Water,1.75
+
+$1.75/$2.25/$2.50, Drinks
+UCS and UCN connecting hallway 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Dasani Water,1.75,Minute Maid Lemonade,1.75,Monster Original Energy,2.50,Monster Java Coffee Energy,2.50,Monster Zero Ultra White Energy,2.50,Smart Water,2.25,Powerade Blue Raspberry Cherry,2.25
+
+$1.25/$2.00/$3.00
+UCS and UCN connecting hallway 2,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Snack,Cheez-It,1.50,Funyuns,1.50,Ruffles Cheddar Cheese,1.50,Pork Rinds BBQ,1.50,Ruffles Oven Baked Cheddar,1.50,Lays Classic,1.50,Cheetos,1.50,Doritos Nacho Cheese,1.50,Fritos,1.50,Cheetos Flamin’ Hot,1.50,Lays Classic Oven Baked,1.50,Oatmeal Cream Pie,1.50,Lays Sour Cream and Onion,1.50,Doritos Cool Ranch,1.50,Lays Oven Baked BBQ,1.50,Reese's Cups,2.00,Reese's Pieces,2.00,Hersey's,2.00,Belvita Crunchy,2.00,M&M’s Peanut Butter,2.00,Twix,2.00,3 Musketeers,2.00,Snickers,2.00,M&M's Peanuts,2.00,Butter Finger,2.00,Nature Valley Crunchy,2.00,Lance Grilled Cheese Crackers,1.25,Lance Peanut Butter Crackers,1.25,Baby Ruth,2.00,Peanuts,2.00,Sweet 'N Salty Mix,2.00,Oreo,2.00,Pork and Beef Sticks,2.00,Skittles,2.00,Starburst Mini,2.00,Nutter Butter,2.00,Rice Krispie Treat,2.00,Jack Links Beef Teriyaki Bites,3.00,Chocolate Chip Cookies,3.00,Pop-Tart Cherry,1.25
+
+$1.75, Drinks
+UCS and UCN connecting hallway 3,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Zero,1.75,Coca-Cola Diet,1.75,Sprite,1.75
+
+$1.75, Drinks
+KV Ground floor next to mini gallery 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Zero,1.75,Coca-Cola Diet,1.75,Sprite,1.75,Dasani Water,1.75,Monster Original Energy,2.50
+
+$1.75, Drinks
+KV ground floor near stairs 4,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Zero,1.75,Coca-Cola Diet,1.75,Coca-Cola Cherry,1.75,Sprite,1.75,Dasani Water,1.75
+
+$1.75, Drinks
+KV 1st floor near stairs 1,Out of Order,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Zero,1.75,Coca-Cola Diet,1.75,Coca-Cola Cherry,1.75,Sprite,1.75,Mello Yello,1.75
+
+$1.75, Drinks
+KV 2nd floor near elevator 1,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Coca-Cola,1.75,Coca-Cola Zero,1.75,Coca-Cola Diet,1.75,Sprite,1.75,Mello Yello,1.75
+
+$2.50, Drinks
+KV 2nd floor near elevator 2,Working,Accepts Cash/Crimson Card/Credit and Debit Card/Apple Pay/ Samsung Pay/Google Pay,Drink,Dasani Water,1.75,Monster Original Energy,2.50,Monster Zero Ultra Energy,2.50
