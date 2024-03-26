@@ -34,6 +34,8 @@ class MyHomePage extends StatefulWidget {
 
 //Creates the SearchDrawer
 class SearchDrawer extends StatelessWidget{
+  const SearchDrawer({super.key});
+
   @override
   Widget build(BuildContext context){
     return Drawer(
@@ -101,7 +103,7 @@ class SearchDrawer extends StatelessWidget{
           onTap: (){
             //Go to next page
             Navigator.pop(context);
-            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => PricePage()));
+            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const PricePage()));
            },
          ),
        ],

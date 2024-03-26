@@ -26,7 +26,8 @@ import 'dart:io';
                   if(lineCounter % 2 == 0){
                     key = char;
                   }else{
-                    value = char;
+                    //removes spaces
+                    value = char.trim();
 
 
                     //First time through location, status
@@ -41,7 +42,7 @@ import 'dart:io';
                   
                   }
               }else if(char == ' '){
-                allVendingMap[vendingnum] = vendingMap;
+                allVendingMap[vendingnum] = Map.from(vendingMap);
                 vendingMap = {};
                 vendingnum++;
                 lineCounter--;
@@ -52,7 +53,30 @@ import 'dart:io';
         } on FileSystemException catch (e) {
           print('File not found: ${e.message}');
         }
+
     return(allVendingMap);
+
   }
     
+
+
+
+writePriceMap(Map<String, List<String>?> priceMap)async{
+  File f = File("assets/PriceMap.txt");
+  //Clears file
+  f.writeAsStringSync('');
+ 
+  priceMap.forEach((key, value) {
+    // Write key and values
+    if (value != null) {
+      var valueString = value.join(", ");
+      f.writeAsStringSync('$key : $valueString\n', mode: FileMode.append);
+    } else {
+      
+      f.writeAsStringSync('$key : null\n', mode: FileMode.append);
+    }
+  });
   
+
+  
+}
