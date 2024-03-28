@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'main.dart';
+import 'home_page.dart';
 
 class PricePage extends StatefulWidget {
   const PricePage({super.key});
