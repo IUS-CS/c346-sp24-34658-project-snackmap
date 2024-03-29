@@ -65,15 +65,16 @@ import 'dart:io';
 Future<void> writePriceMap(Map<String, List<String>> priceMap) async {
   final File file = File('assets/PriceMap.txt');
 
-  // Clear the contents of the file
-  await file.writeAsString('');
+  //Clear the contents of the file
+  //await file.writeAsString('');
+   await file.writeAsString('', mode: FileMode.writeOnly);
 
-  // Write data to the file
+  //Write data to the file
   priceMap.forEach((key, value) {
     if (value != null) {
-      // Concatenate location and price strings
+      //Location and price strings
       final formattedValues = value.map((item) => item.split(': ').join(', ')).join(', ');
-      // Write key and formatted values to the file
+      //Write key and formatted values to the file
       file.writeAsStringSync('$key : $formattedValues\n', mode: FileMode.append);
     } else {
       file.writeAsStringSync('$key : null\n', mode: FileMode.append);
