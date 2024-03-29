@@ -61,22 +61,22 @@ import 'dart:io';
 
 
 
-writePriceMap(Map<String, List<String>?> priceMap)async{
-  File f = File("assets/PriceMap.txt");
-  //Clears file
-  f.writeAsStringSync('');
- 
+
+Future<void> writePriceMap(Map<String, List<String>> priceMap) async {
+  final File file = File('assets/PriceMap.txt');
+
+  // Clear the contents of the file
+  await file.writeAsString('');
+
+  // Write data to the file
   priceMap.forEach((key, value) {
-    // Write key and values
     if (value != null) {
-      var valueString = value.join(", ");
-      f.writeAsStringSync('$key : $valueString\n', mode: FileMode.append);
+      // Concatenate location and price strings
+      final formattedValues = value.map((item) => item.split(': ').join(', ')).join(', ');
+      // Write key and formatted values to the file
+      file.writeAsStringSync('$key : $formattedValues\n', mode: FileMode.append);
     } else {
-      
-      f.writeAsStringSync('$key : null\n', mode: FileMode.append);
+      file.writeAsStringSync('$key : null\n', mode: FileMode.append);
     }
   });
-  
-
-  
 }

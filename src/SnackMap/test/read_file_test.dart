@@ -30,7 +30,7 @@ void main() {
   });
   test('Write to PriceMap.txt works',(){
     Map<int,Map<String,String>> allVendingMap = readFile('assets/VendingInformation.txt');
-    Map<String, List<String>?> temp = SearchByPrice().sortByPrice(allVendingMap);
+    Map<String, List<String>> temp = SearchByPrice().sortByPrice(allVendingMap);
     writePriceMap(temp);
     var myFile = File('assets/PriceMap.txt'); 
     var actual = myFile.readAsLinesSync().length;

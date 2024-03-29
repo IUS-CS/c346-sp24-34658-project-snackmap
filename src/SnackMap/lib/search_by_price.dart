@@ -1,5 +1,4 @@
 import 'package:SnackMap/read_and_write.dart';
-
 import 'get_individual_map_data.dart';
 
 class SearchByPrice {
@@ -7,8 +6,8 @@ class SearchByPrice {
     List<String> snackList = GetData().getSnackData(allVendingMap);
     List<String> drinkList = GetData().getDrinkData(allVendingMap);
     Map<String, List<String>> itemMap = {};
-    int keyTracker = 0;
 
+    // Initialize itemMap with empty lists for each item
     //Add the keys to itemMap for snackList
     for (int index = 0; index < snackList.length; index++) {
       itemMap[snackList[index]] = [];
@@ -19,43 +18,30 @@ class SearchByPrice {
       itemMap[drinkList[index]] = [];
     }
 
-    // For each vending machine
+    // Iterate through vending machines
     for (int vendingNum = 1; vendingNum < 28; vendingNum++) {
       Map<String, String>? currentMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
       if (currentMap != null) {
         currentMap.forEach((key, value) {
-          //Skips the location and payment
-          if (keyTracker > 2) {
-            // If the key is in the map
-            if (itemMap.containsKey(key)) {
-              //Add price and location to list
-              if (itemMap[key]!.isEmpty ||
-                //If value is greater than or equal to the lowest price add to end of list
-                  double.parse(itemMap[key]![0]) <= double.parse(value)) {
-                itemMap[key]!.add(value);
-                itemMap[key]!.add(currentMap.keys.first);
-                //If value is less than then add to front of list
-              } else if (double.parse(itemMap[key]![0]) > double.parse(value)) {
-                itemMap[key]!.insert(0, value);
-                itemMap[key]!.insert(1, currentMap.keys.first);
-              }
-            }
+          // Check if item is in itemMap
+          if (itemMap.containsKey(key)) {
+            double currentValue = double.parse(value);
+            String currentLocation = currentMap.keys.first;
+            List<String> currentList = itemMap[key]!;
+
+            // Add the current location and value to the list
+            currentList.add("$currentLocation: $value");
           }
-          keyTracker++;
         });
       }
     }
 
-    //Sort itemMap by the lowest value price
-    final priceMap = Map.fromEntries(itemMap.entries.toList()
-      ..sort((e1, e2) => double.parse(e1.value[0]).compareTo(double.parse(e2.value[0]))));
+    // Sort itemMap by the lowest value price for each item
+    itemMap.forEach((key, value) {
+      value.sort((a, b) => double.parse(a.split(": ")[1]).compareTo(double.parse(b.split(": ")[1])));
+    });
 
-
-    
-    
-    
-    
-    writePriceMap(priceMap);
-    return priceMap;
+    writePriceMap(itemMap);
+    return itemMap;
   }
 }
