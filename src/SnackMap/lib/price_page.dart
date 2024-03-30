@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'main.dart';
+import 'home_page.dart';
 
 class PricePage extends StatefulWidget {
   const PricePage({super.key});
@@ -90,7 +90,7 @@ class MyAppScreenState extends State<PricePage> {
                     for(int i =0; i < pricesAndLocations.length;i = i+2)
                       ListTile(
                         //Output $price at location
-                        title: Text('\$${pricesAndLocations[i]} at ${pricesAndLocations[i+1]}', textAlign: TextAlign.start),
+                        title: Text('\$${pricesAndLocations[i+1]} at ${pricesAndLocations[i]}', textAlign: TextAlign.start),
                       ),
                   ],
                 ),
