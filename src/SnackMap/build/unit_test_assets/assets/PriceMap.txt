@@ -1,178 +1,89 @@
-Ruffles Cheddar Cheese : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Lays Sour Cream and Onion : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near doors 1, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Grippos BBQ : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, HH 2nd floor near breezeway 2, 1.50
-Pork Rinds BBQ : PS 1st floor near bathrooms 2, 1.50, CV 1st floor near bathrooms 1, 1.50, HH 3rd floor in common area 2, 1.50, UCS and UCN connecting hallway 2, 1.50
-Lays Classic : PS 1st floor near bathrooms 2, 1.50, UCS and UCN connecting hallway 2, 1.50
-Cheetos Crunchy : PS 1st floor near bathrooms 2, 1.50
-Doritos Nacho Cheese : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Fritos Chili Cheese : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50
-Miss Vickies Spicy Dill Pickle Chips : PS 1st floor near bathrooms 2, 1.50, CV 1st floor near bathrooms 1, 1.50
-Doritos Spicy Sweet Chili : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50
-Reese's Cups : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Reese's Pieces : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Baby Ruth : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Sweet 'N Spicy Mix : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2, 2.00
-Lance Grilled Cheese Crackers : LF 1st floor near men's bathroom 1, 1.25, HH 3rd floor in common area 2, 1.25, UCS and UCN connecting hallway 2, 1.25, PS 1st floor near bathrooms 2, 2.00, CV 1st floor near bathrooms 1, 2.00
-Lance Peanut Butter Crackers : LF 1st floor near men's bathroom 1, 1.25, HH 2nd floor near breezeway 2, 1.25, UCS and UCN connecting hallway 2, 1.25, PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, CV 1st floor near bathrooms 1, 2.00
-Skittles : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Nutter Butter : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Rice Krispie Treat : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Pop-Tart Strawberry : HH 2nd floor near breezeway 2, 2.25, PS 1st floor near bathrooms 2, 3.00, LF 1st floor near men's bathroom 1, 3.00
-Chocolate Chip Cookies : HH 2nd floor near breezeway 2, 2.25, PS 1st floor near bathrooms 2, 3.00, LF 1st floor near men's bathroom 1, 3.00, UCS and UCN connecting hallway 2, 3.00
-Honey Bun : PS 1st floor near bathrooms 2, 3.00
-Reese's Cookies : PS 1st floor near bathrooms 2, 3.00, LF 1st floor near men's bathroom 1, 3.00
-Funyuns : LF 1st floor near doors 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Cheetos : LF 1st floor near doors 1, 1.50, LF 1st floor near men's bathroom 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Lays Classic OvenBaked : LF 1st floor near doors 1, 1.50
-Doritos Cool Ranch : LF 1st floor near doors 1, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Doritos BBQ : LF 1st floor near doors 1, 1.50, CV 1st floor near bathrooms 1, 1.50
-M&M's Peanuts : LF 1st floor near doors 1, 1.50, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-M&M's Peanut Butter : LF 1st floor near doors 1, 1.50
-Nature Valley Crunchy : LF 1st floor near doors 1, 1.50, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Mamba : HH 3rd floor in common area 2, 1.25, LF 1st floor near doors 1, 2.00, HH 2nd floor near breezeway 2, 2.25
-Starburst Mini : LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Jack Link's Prime Rib : LF 1st floor near doors 1, 3.00
-Jack Link's Beef Teriyaki Bites : LF 1st floor near doors 1, 3.00, CV 1st floor near bathrooms 1, 3.00
-Pork Rinds : LF 1st floor near men's bathroom 1, 1.50
-Ruffles Oven Baked Cheddar : LF 1st floor near men's bathroom 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Lays Original : LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50
-Miss Vickies Spicy Dill Pickle : LF 1st floor near men's bathroom 1, 1.50
-Cheetos Flamin’ Hot : LF 1st floor near men's bathroom 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Fritos Twist : LF 1st floor near men's bathroom 1, 1.50
-Cheez-It : CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Cheetos Puffs : CV 1st floor near bathrooms 1, 1.50
-Fritos BBQ Chips : CV 1st floor near bathrooms 1, 1.50
-Lays Oven Baked : CV 1st floor near bathrooms 1, 1.50
-Oatmeal Cream Pie : HH 2nd floor near breezeway 2, 1.25, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Lays BBQ Oven Baked : CV 1st floor near bathrooms 1, 1.50
-Cheetos Crunchy Flamin’ Hot : CV 1st floor near bathrooms 1, 1.50
-Ruffles Oven Baked Cheddar and Sour Cream : CV 1st floor near bathrooms 1, 1.50
-M&M’s Peanut Butter : CV 1st floor near bathrooms 1, 2.00, UCS and UCN connecting hallway 2, 2.00
-Peanuts : CV 1st floor near bathrooms 1, 2.00, UCS and UCN connecting hallway 2, 2.00
-Twix : CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Beef Sticks : CV 1st floor near bathrooms 1, 2.00
-Belvita Crunchy : HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-3 Musketeers : HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Snickers : HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Reese's Take 5 : HH 2nd floor near breezeway 2, 2.00
-Butter Finger : HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Salted Peanuts : HH 2nd floor near breezeway 2, 2.00
-Oreo : HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Pork and Beef Sticks : HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Cliff Chocolate Chip Cookies : HH 2nd floor near breezeway 2, 2.00
-5 Spearmint : HH 2nd floor near breezeway 2, 2.00
-Life Savers : HH 3rd floor in common area 2, 1.00
-Fritos : UCS and UCN connecting hallway 2, 1.50
-Lays Classic Oven Baked : UCS and UCN connecting hallway 2, 1.50
-Lays Oven Baked BBQ : UCS and UCN connecting hallway 2, 1.50
-Hersey's : UCS and UCN connecting hallway 2, 2.00
-Sweet 'N Salty Mix : UCS and UCN connecting hallway 2, 2.00
-Jack Links Beef Teriyaki Bites : UCS and UCN connecting hallway 2, 3.00
-Pop-Tart Cherry : UCS and UCN connecting hallway 2, 1.25
-Coca-Cola : PS 1st floor near bathrooms 1, 1.75, CV 2nd floor near stairs 2, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1, 1.75, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 2.50
-Coca-Cola Zero : PS 1st floor near bathrooms 1, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1, 1.75, LF 1st floor near doors 2, 2.50
-Coca-Cola Cherry : PS 1st floor near bathrooms 1, 1.75, CV 2nd floor near stairs 2, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 2.50
-Coca-Cola Diet : PS 1st floor near bathrooms 1, 1.75, CV 2nd floor near stairs 2, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1, 1.75, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 2.50
-Sprite : PS 1st floor near bathrooms 1, 1.75, CV 2nd floor near stairs 2, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1, 1.75, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 2.50
-Dasani Water : PS 1st floor near bathrooms 1, 1.75, LF 1st floor near doors 3, 1.75, CV 2nd floor near stairs 1, 1.75, Library 1st floor near office, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 1, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 2nd floor near elevator 2, 1.75, LF 1st floor near men's bathroom 2, 2.50
-Pibb Xtra : Library 1st floor near office, 1.75, HH 3rd floor in common area 1, 1.75, LF 1st floor near doors 2, 2.50
-Monster Original Energy : LF 1st floor near doors 3, 2.50, CV 2nd floor near stairs 1, 2.50, UCS and UCN connecting hallway 1, 2.50, KV Ground floor next to mini gallery 1, 2.50, KV 2nd floor near elevator 2, 2.50
-Monster Zero Ultra Energy : LF 1st floor near doors 3, 2.50, CV 2nd floor near stairs 1, 2.50, KV 2nd floor near elevator 2, 2.50
-Powerade Blue Raspberry Cherry : LF 1st floor near doors 3, 2.00, UCS and UCN connecting hallway 1, 2.25
-Powerade Fruit Punch : LF 1st floor near doors 3, 2.00
-Minute Maid Lemonade : CV 2nd floor near stairs 1, 1.75, UCS and UCN connecting hallway 1, 1.75
-Mountain Berry Blast : CV 2nd floor near stairs 1, 2.00
-Monster Java Coffee Energy : CV 2nd floor near stairs 1, 2.50, UCS and UCN connecting hallway 1, 2.50
-Mello Yello : CV 2nd floor near stairs 2, 1.75, HH 2nd floor near breezeway 1, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1, 1.75
-Fanta : CV 2nd floor near stairs 2, 1.75
-Monster Zero Ultra White Energy : UCS and UCN connecting hallway 1, 2.50
-Smart Water : UCS and UCN connecting hallway 1, 2.25
-Ruffles Cheddar Cheese : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Lays Sour Cream and Onion : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near doors 1, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Grippos BBQ : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, HH 2nd floor near breezeway 2, 1.50
-Pork Rinds BBQ : PS 1st floor near bathrooms 2, 1.50, CV 1st floor near bathrooms 1, 1.50, HH 3rd floor in common area 2, 1.50, UCS and UCN connecting hallway 2, 1.50
-Lays Classic : PS 1st floor near bathrooms 2, 1.50, UCS and UCN connecting hallway 2, 1.50
-Cheetos Crunchy : PS 1st floor near bathrooms 2, 1.50
-Doritos Nacho Cheese : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Fritos Chili Cheese : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50
-Miss Vickies Spicy Dill Pickle Chips : PS 1st floor near bathrooms 2, 1.50, CV 1st floor near bathrooms 1, 1.50
-Doritos Spicy Sweet Chili : PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50
-Reese's Cups : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Reese's Pieces : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Baby Ruth : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Sweet 'N Spicy Mix : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2, 2.00
-Lance Grilled Cheese Crackers : LF 1st floor near men's bathroom 1, 1.25, HH 3rd floor in common area 2, 1.25, UCS and UCN connecting hallway 2, 1.25, PS 1st floor near bathrooms 2, 2.00, CV 1st floor near bathrooms 1, 2.00
-Lance Peanut Butter Crackers : LF 1st floor near men's bathroom 1, 1.25, HH 2nd floor near breezeway 2, 1.25, UCS and UCN connecting hallway 2, 1.25, PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, CV 1st floor near bathrooms 1, 2.00
-Skittles : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Nutter Butter : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Rice Krispie Treat : PS 1st floor near bathrooms 2, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Pop-Tart Strawberry : HH 2nd floor near breezeway 2, 2.25, PS 1st floor near bathrooms 2, 3.00, LF 1st floor near men's bathroom 1, 3.00
-Chocolate Chip Cookies : HH 2nd floor near breezeway 2, 2.25, PS 1st floor near bathrooms 2, 3.00, LF 1st floor near men's bathroom 1, 3.00, UCS and UCN connecting hallway 2, 3.00
-Honey Bun : PS 1st floor near bathrooms 2, 3.00
-Reese's Cookies : PS 1st floor near bathrooms 2, 3.00, LF 1st floor near men's bathroom 1, 3.00
-Funyuns : LF 1st floor near doors 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Cheetos : LF 1st floor near doors 1, 1.50, LF 1st floor near men's bathroom 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Lays Classic OvenBaked : LF 1st floor near doors 1, 1.50
-Doritos Cool Ranch : LF 1st floor near doors 1, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Doritos BBQ : LF 1st floor near doors 1, 1.50, CV 1st floor near bathrooms 1, 1.50
-M&M's Peanuts : LF 1st floor near doors 1, 1.50, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-M&M's Peanut Butter : LF 1st floor near doors 1, 1.50
-Nature Valley Crunchy : LF 1st floor near doors 1, 1.50, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Mamba : HH 3rd floor in common area 2, 1.25, LF 1st floor near doors 1, 2.00, HH 2nd floor near breezeway 2, 2.25
-Starburst Mini : LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Jack Link's Prime Rib : LF 1st floor near doors 1, 3.00
-Jack Link's Beef Teriyaki Bites : LF 1st floor near doors 1, 3.00, CV 1st floor near bathrooms 1, 3.00
-Pork Rinds : LF 1st floor near men's bathroom 1, 1.50
-Ruffles Oven Baked Cheddar : LF 1st floor near men's bathroom 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Lays Original : LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50
-Miss Vickies Spicy Dill Pickle : LF 1st floor near men's bathroom 1, 1.50
-Cheetos Flamin’ Hot : LF 1st floor near men's bathroom 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Fritos Twist : LF 1st floor near men's bathroom 1, 1.50
-Cheez-It : CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Cheetos Puffs : CV 1st floor near bathrooms 1, 1.50
-Fritos BBQ Chips : CV 1st floor near bathrooms 1, 1.50
-Lays Oven Baked : CV 1st floor near bathrooms 1, 1.50
-Oatmeal Cream Pie : HH 2nd floor near breezeway 2, 1.25, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2, 1.50
-Lays BBQ Oven Baked : CV 1st floor near bathrooms 1, 1.50
-Cheetos Crunchy Flamin’ Hot : CV 1st floor near bathrooms 1, 1.50
-Ruffles Oven Baked Cheddar and Sour Cream : CV 1st floor near bathrooms 1, 1.50
-M&M’s Peanut Butter : CV 1st floor near bathrooms 1, 2.00, UCS and UCN connecting hallway 2, 2.00
-Peanuts : CV 1st floor near bathrooms 1, 2.00, UCS and UCN connecting hallway 2, 2.00
-Twix : CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Beef Sticks : CV 1st floor near bathrooms 1, 2.00
-Belvita Crunchy : HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-3 Musketeers : HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Snickers : HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Reese's Take 5 : HH 2nd floor near breezeway 2, 2.00
-Butter Finger : HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Salted Peanuts : HH 2nd floor near breezeway 2, 2.00
-Oreo : HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Pork and Beef Sticks : HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2, 2.00
-Cliff Chocolate Chip Cookies : HH 2nd floor near breezeway 2, 2.00
-5 Spearmint : HH 2nd floor near breezeway 2, 2.00
-Life Savers : HH 3rd floor in common area 2, 1.00
-Fritos : UCS and UCN connecting hallway 2, 1.50
-Lays Classic Oven Baked : UCS and UCN connecting hallway 2, 1.50
-Lays Oven Baked BBQ : UCS and UCN connecting hallway 2, 1.50
-Hersey's : UCS and UCN connecting hallway 2, 2.00
-Sweet 'N Salty Mix : UCS and UCN connecting hallway 2, 2.00
-Jack Links Beef Teriyaki Bites : UCS and UCN connecting hallway 2, 3.00
-Pop-Tart Cherry : UCS and UCN connecting hallway 2, 1.25
-Coca-Cola : PS 1st floor near bathrooms 1, 1.75, CV 2nd floor near stairs 2, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1, 1.75, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 2.50
-Coca-Cola Zero : PS 1st floor near bathrooms 1, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1, 1.75, LF 1st floor near doors 2, 2.50
-Coca-Cola Cherry : PS 1st floor near bathrooms 1, 1.75, CV 2nd floor near stairs 2, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 2.50
-Coca-Cola Diet : PS 1st floor near bathrooms 1, 1.75, CV 2nd floor near stairs 2, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1, 1.75, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 2.50
-Sprite : PS 1st floor near bathrooms 1, 1.75, CV 2nd floor near stairs 2, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1, 1.75, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 2.50
-Dasani Water : PS 1st floor near bathrooms 1, 1.75, LF 1st floor near doors 3, 1.75, CV 2nd floor near stairs 1, 1.75, Library 1st floor near office, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 1, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 2nd floor near elevator 2, 1.75, LF 1st floor near men's bathroom 2, 2.50
-Pibb Xtra : Library 1st floor near office, 1.75, HH 3rd floor in common area 1, 1.75, LF 1st floor near doors 2, 2.50
-Monster Original Energy : LF 1st floor near doors 3, 2.50, CV 2nd floor near stairs 1, 2.50, UCS and UCN connecting hallway 1, 2.50, KV Ground floor next to mini gallery 1, 2.50, KV 2nd floor near elevator 2, 2.50
-Monster Zero Ultra Energy : LF 1st floor near doors 3, 2.50, CV 2nd floor near stairs 1, 2.50, KV 2nd floor near elevator 2, 2.50
-Powerade Blue Raspberry Cherry : LF 1st floor near doors 3, 2.00, UCS and UCN connecting hallway 1, 2.25
-Powerade Fruit Punch : LF 1st floor near doors 3, 2.00
-Minute Maid Lemonade : CV 2nd floor near stairs 1, 1.75, UCS and UCN connecting hallway 1, 1.75
-Mountain Berry Blast : CV 2nd floor near stairs 1, 2.00
-Monster Java Coffee Energy : CV 2nd floor near stairs 1, 2.50, UCS and UCN connecting hallway 1, 2.50
-Mello Yello : CV 2nd floor near stairs 2, 1.75, HH 2nd floor near breezeway 1, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1, 1.75
-Fanta : CV 2nd floor near stairs 2, 1.75
-Monster Zero Ultra White Energy : UCS and UCN connecting hallway 1, 2.50
-Smart Water : UCS and UCN connecting hallway 1, 2.25
+Life Savers : 1.00, HH 3rd floor in common area 2
+Oatmeal Cream Pie : 1.25, HH 2nd floor near breezeway 2, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2
+Lance Grilled Cheese Crackers : 1.25, LF 1st floor near men's bathroom 1, 2.00, PS 1st floor near bathrooms 2, 2.00, CV 1st floor near bathrooms 1, 1.25, HH 3rd floor in common area 2, 1.25, UCS and UCN connecting hallway 2
+Lance Peanut Butter Crackers : 1.25, LF 1st floor near men's bathroom 1, 2.00, PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, CV 1st floor near bathrooms 1, 1.25, HH 2nd floor near breezeway 2, 1.25, UCS and UCN connecting hallway 2
+Pop-Tart Cherry : 1.25, UCS and UCN connecting hallway 2
+Mamba : 1.25, HH 3rd floor in common area 2, 2.00, LF 1st floor near doors 1, 2.25, HH 2nd floor near breezeway 2
+Nature Valley Crunchy : 1.50, LF 1st floor near doors 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2
+Doritos BBQ : 1.50, LF 1st floor near doors 1, 1.50, CV 1st floor near bathrooms 1
+Miss Vickies Spicy Dill Pickle Chips : 1.50, PS 1st floor near bathrooms 2, 1.50, CV 1st floor near bathrooms 1
+Doritos Spicy Sweet Chili : 1.50, PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1
+Cheetos Crunchy Flamin’ Hot : 1.50, CV 1st floor near bathrooms 1
+Lays BBQ Oven Baked : 1.50, CV 1st floor near bathrooms 1
+Doritos Nacho Cheese : 1.50, PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2
+Lays Oven Baked : 1.50, CV 1st floor near bathrooms 1
+Lays Sour Cream and Onion : 1.50, PS 1st floor near bathrooms 2, 1.50, LF 1st floor near doors 1, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2
+Grippos BBQ : 1.50, PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, HH 2nd floor near breezeway 2
+Fritos BBQ Chips : 1.50, CV 1st floor near bathrooms 1
+Cheetos Puffs : 1.50, CV 1st floor near bathrooms 1
+Fritos Twist : 1.50, LF 1st floor near men's bathroom 1
+Cheetos Flamin’ Hot : 1.50, LF 1st floor near men's bathroom 1, 1.50, UCS and UCN connecting hallway 2
+Fritos Chili Cheese : 1.50, PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1
+Pork Rinds BBQ : 1.50, PS 1st floor near bathrooms 2, 1.50, CV 1st floor near bathrooms 1, 1.50, HH 3rd floor in common area 2, 1.50, UCS and UCN connecting hallway 2
+Lays Oven Baked BBQ : 1.50, UCS and UCN connecting hallway 2
+Funyuns : 1.50, LF 1st floor near doors 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2
+Cheetos : 1.50, LF 1st floor near doors 1, 1.50, LF 1st floor near men's bathroom 1, 1.50, UCS and UCN connecting hallway 2
+Lays Classic OvenBaked : 1.50, LF 1st floor near doors 1
+Doritos Cool Ranch : 1.50, LF 1st floor near doors 1, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2
+Cheetos Crunchy : 1.50, PS 1st floor near bathrooms 2
+M&M's Peanuts : 1.50, LF 1st floor near doors 1, 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2
+M&M's Peanut Butter : 1.50, LF 1st floor near doors 1
+Ruffles Cheddar Cheese : 1.50, PS 1st floor near bathrooms 2, 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2
+Lays Classic : 1.50, PS 1st floor near bathrooms 2, 1.50, UCS and UCN connecting hallway 2
+Lays Classic Oven Baked : 1.50, UCS and UCN connecting hallway 2
+Fritos : 1.50, UCS and UCN connecting hallway 2
+Ruffles Oven Baked Cheddar and Sour Cream : 1.50, CV 1st floor near bathrooms 1
+Pork Rinds : 1.50, LF 1st floor near men's bathroom 1
+Ruffles Oven Baked Cheddar : 1.50, LF 1st floor near men's bathroom 1, 1.50, UCS and UCN connecting hallway 2
+Lays Original : 1.50, LF 1st floor near men's bathroom 1, 1.50, CV 1st floor near bathrooms 1
+Miss Vickies Spicy Dill Pickle : 1.50, LF 1st floor near men's bathroom 1
+Cheez-It : 1.50, CV 1st floor near bathrooms 1, 1.50, UCS and UCN connecting hallway 2
+Coca-Cola Cherry : 1.75, PS 1st floor near bathrooms 1, 2.50, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 1.75, CV 2nd floor near stairs 2, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1
+Coca-Cola : 1.75, CV 2nd floor near stairs 2, 2.50, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1
+Sprite : 1.75, PS 1st floor near bathrooms 1, 2.50, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 1.75, CV 2nd floor near stairs 2, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1
+Dasani Water : 1.75, PS 1st floor near bathrooms 1, 1.75, LF 1st floor near doors 3, 2.50, LF 1st floor near men's bathroom 2, 1.75, CV 2nd floor near stairs 1, 1.75, Library 1st floor near office, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 1, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 2nd floor near elevator 2
+Pibb Xtra : 1.75, Library 1st floor near office, 2.50, LF 1st floor near doors 2, 1.75, HH 3rd floor in common area 1
+Minute Maid Lemonade : 1.75, CV 2nd floor near stairs 1, 1.75, UCS and UCN connecting hallway 1
+Mello Yello : 1.75, CV 2nd floor near stairs 2, 1.75, HH 2nd floor near breezeway 1, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1
+Fanta : 1.75, CV 2nd floor near stairs 2
+Coca-Cola Zero : 1.75, PS 1st floor near bathrooms 1, 2.50, LF 1st floor near doors 2, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1
+Coca-Cola Diet : 1.75, PS 1st floor near bathrooms 1, 2.50, LF 1st floor near doors 2, 2.50, LF 1st floor near men's bathroom 2, 1.75, CV 2nd floor near stairs 2, 1.75, Library 1st floor near office, 1.75, HH 2nd floor near breezeway 1, 1.75, HH 3rd floor in common area 1, 1.75, UCS Ground floor near book store, 1.75, UCS 2nd floor in common area 1, 1.75, UCS and UCN connecting hallway 3, 1.75, KV Ground floor next to mini gallery 1, 1.75, KV ground floor near stairs 4, 1.75, KV 1st floor near stairs 1, 1.75, KV 2nd floor near elevator 1
+Baby Ruth : 2.00, PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2
+Twix : 2.00, CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2
+Beef Sticks : 2.00, CV 1st floor near bathrooms 1
+Belvita Crunchy : 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2
+3 Musketeers : 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2
+Snickers : 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2
+Reese's Take 5 : 2.00, HH 2nd floor near breezeway 2
+Butter Finger : 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2
+Oreo : 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2
+Pork and Beef Sticks : 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2
+Cliff Chocolate Chip Cookies : 2.00, HH 2nd floor near breezeway 2
+5 Spearmint : 2.00, HH 2nd floor near breezeway 2
+Peanuts : 2.00, CV 1st floor near bathrooms 1, 2.00, UCS and UCN connecting hallway 2
+Starburst Mini : 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, UCS and UCN connecting hallway 2
+Hersey's : 2.00, UCS and UCN connecting hallway 2
+Sweet 'N Salty Mix : 2.00, UCS and UCN connecting hallway 2
+Nutter Butter : 2.00, PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2
+Rice Krispie Treat : 2.00, PS 1st floor near bathrooms 2, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2
+Salted Peanuts : 2.00, HH 2nd floor near breezeway 2
+M&M’s Peanut Butter : 2.00, CV 1st floor near bathrooms 1, 2.00, UCS and UCN connecting hallway 2
+Skittles : 2.00, PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, CV 1st floor near bathrooms 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2
+Sweet 'N Spicy Mix : 2.00, PS 1st floor near bathrooms 2, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2
+Powerade Blue Raspberry Cherry : 2.00, LF 1st floor near doors 3, 2.25, UCS and UCN connecting hallway 1
+Powerade Fruit Punch : 2.00, LF 1st floor near doors 3
+Mountain Berry Blast : 2.00, CV 2nd floor near stairs 1
+Reese's Cups : 2.00, PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2
+Reese's Pieces : 2.00, PS 1st floor near bathrooms 2, 2.00, LF 1st floor near doors 1, 2.00, LF 1st floor near men's bathroom 1, 2.00, HH 2nd floor near breezeway 2, 2.00, HH 3rd floor in common area 2, 2.00, UCS and UCN connecting hallway 2
+Chocolate Chip Cookies : 2.25, HH 2nd floor near breezeway 2, 3.00, PS 1st floor near bathrooms 2, 3.00, LF 1st floor near men's bathroom 1, 3.00, UCS and UCN connecting hallway 2
+Pop-Tart Strawberry : 2.25, HH 2nd floor near breezeway 2, 3.00, PS 1st floor near bathrooms 2, 3.00, LF 1st floor near men's bathroom 1
+Smart Water : 2.25, UCS and UCN connecting hallway 1
+Monster Original Energy : 2.50, LF 1st floor near doors 3, 2.50, CV 2nd floor near stairs 1, 2.50, UCS and UCN connecting hallway 1, 2.50, KV Ground floor next to mini gallery 1, 2.50, KV 2nd floor near elevator 2
+Monster Zero Ultra Energy : 2.50, LF 1st floor near doors 3, 2.50, CV 2nd floor near stairs 1, 2.50, KV 2nd floor near elevator 2
+Monster Zero Ultra White Energy : 2.50, UCS and UCN connecting hallway 1
+Monster Java Coffee Energy : 2.50, CV 2nd floor near stairs 1, 2.50, UCS and UCN connecting hallway 1
+Jack Link's Beef Teriyaki Bites : 3.00, LF 1st floor near doors 1, 3.00, CV 1st floor near bathrooms 1
+Honey Bun : 3.00, PS 1st floor near bathrooms 2
+Reese's Cookies : 3.00, PS 1st floor near bathrooms 2, 3.00, LF 1st floor near men's bathroom 1
+Jack Link's Prime Rib : 3.00, LF 1st floor near doors 1
+Jack Links Beef Teriyaki Bites : 3.00, UCS and UCN connecting hallway 2
