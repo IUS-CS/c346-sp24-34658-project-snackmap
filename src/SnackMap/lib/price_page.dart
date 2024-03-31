@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'home_page.dart';
+import 'options_drawer.dart';
 
 class PricePage extends StatefulWidget {
   const PricePage({super.key});
@@ -45,16 +45,18 @@ class MyAppScreenState extends State<PricePage> {
 
   @override
   Widget build(BuildContext context) {
-    int _colorIndex = 0; // Index to cycle through background colors
+    //Used to cycle though background colors
+    int _colorIndex = 0;
 
     return Scaffold(
-      //Add drawer from main.dart
-      drawer: const SearchDrawer(),
+      //Add drawer
+      drawer: const OptionsDrawer(),
       appBar: AppBar(
         backgroundColor: const Color(0xff3A95D1),
         title: const Center(
           child: Text('Search For Snack or Drink By Lowest Price'),
         ),
+        
       ),
       body: Center(
         child: Container(
@@ -90,7 +92,7 @@ class MyAppScreenState extends State<PricePage> {
                     for(int i =0; i < pricesAndLocations.length;i = i+2)
                       ListTile(
                         //Output $price at location
-                        title: Text('\$${pricesAndLocations[i+1]} at ${pricesAndLocations[i]}', textAlign: TextAlign.start),
+                        title: Text('\$${pricesAndLocations[i]} at ${pricesAndLocations[i+1]}', textAlign: TextAlign.start),
                       ),
                   ],
                 ),

@@ -1,7 +1,8 @@
-
+import 'package:SnackMap/about_us_page.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-import 'price_page.dart';
+import 'options_drawer.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -25,78 +26,10 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class SearchDrawer extends StatelessWidget {
-  const SearchDrawer({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          const DrawerHeader(
-            decoration: BoxDecoration(
-              color: Color(0xff64C19D),
-            ),
-            child: Text(
-              'Find A Snack By',
-              style: TextStyle(
-                fontSize: 35.0,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-          ),
-          ListTile(
-            leading: const Icon(Icons.manage_search),
-            title: const Text(
-              'Name',
-              style: TextStyle(
-                fontSize: 15.0,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-            subtitle: const Text('Search for a drink or snack by name.'),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.room),
-            title: const Text(
-              'Location',
-              style: TextStyle(
-                fontSize: 15.0,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-            subtitle: const Text('Search for a drink or snack by location.'),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.paid),
-            title: const Text(
-              'Price',
-              style: TextStyle(
-                fontSize: 15.0,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-            subtitle: const Text('Search for a drink or snack by price.'),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => const PricePage()));
-            },
-          ),
-        ],
-      ),
-    );
-  }
-}
 
 class _MyHomePageState extends State<MyHomePage> {
+  //Used for testing
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
 
   late VideoPlayerController _controller;
@@ -150,12 +83,25 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: SearchDrawer(),
+      key: _scaffoldKey,
+      drawer: OptionsDrawer(),
       appBar: AppBar(
         backgroundColor: const Color(0xff3A95D1),
         title: const Center(
           child: Text('SnackMap'),
+          
         ),
+
+        //used for testing
+        leading: IconButton(
+        icon: Icon(Icons.menu),
+        onPressed: () {
+          _scaffoldKey.currentState?.openDrawer();
+        },
+        tooltip: 'Open menu',
+
+
+      ),
       ),
       body: Stack(
         children: [
@@ -178,13 +124,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   ElevatedButton(
                     onPressed: _startVideo,
-                    child: const Text('Start'),
+                    child: const Text('Play'),
                   ),
+
                 ],
               ),
             ),
         ],
       ),
+     
     );
+    
+  
   }
 }
