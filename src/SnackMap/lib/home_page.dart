@@ -1,3 +1,4 @@
+import 'package:SnackMap/about_us_page.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'options_drawer.dart';
@@ -123,15 +124,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   ElevatedButton(
                     onPressed: _startVideo,
-                    child: const Text('Start'),
+                    child: const Text('Play'),
                   ),
+
                 ],
               ),
             ),
         ],
       ),
-      
+     
     );
+    
   
   }
 }

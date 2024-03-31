@@ -45,7 +45,8 @@ class MyAppScreenState extends State<PricePage> {
 
   @override
   Widget build(BuildContext context) {
-    int _colorIndex = 0; // Index to cycle through background colors
+    //Used to cycle though background colors
+    int _colorIndex = 0;
 
     return Scaffold(
       //Add drawer
