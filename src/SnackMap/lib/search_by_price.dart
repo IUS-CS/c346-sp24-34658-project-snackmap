@@ -30,12 +30,12 @@ class SearchByPrice {
             if (itemMap.containsKey(key)) {
               //Add price and location to list
               if (itemMap[key]!.isEmpty ||
-                //If value is greater than or equal to the lowest price add to end of list
-                  double.parse(itemMap[key]![0]) <= double.parse(value)) {
+                //If value is greater than the lowest price add to end of list
+                  double.parse(itemMap[key]![0]) < double.parse(value)) {
                 itemMap[key]!.add(value);
                 itemMap[key]!.add(currentMap.keys.first);
                 //If value is less than then add to front of list
-              } else if (double.parse(itemMap[key]![0]) > double.parse(value)) {
+              } else if (double.parse(itemMap[key]![0]) >= double.parse(value)) {
                 itemMap[key]!.insert(0, value);
                 itemMap[key]!.insert(1, currentMap.keys.first);
               }
