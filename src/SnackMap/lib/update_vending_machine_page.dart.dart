@@ -28,7 +28,7 @@ class UpdateVendingPageState extends State<UpdateVendingPage> {
         title: const Center(
           child: Text('Update a Vending Machine'),
         ),
-        //Select vening machine with drop down
+        //Select vending machine with drop down
         // If snack add snacks with yes or no drop
         //remove snack with yes or no drop if add is no
         //search through list of item and checkbox which to add or remove

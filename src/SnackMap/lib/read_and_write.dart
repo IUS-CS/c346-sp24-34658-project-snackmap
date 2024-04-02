@@ -11,12 +11,6 @@ import 'dart:io';
         var contents = File(fileName).readAsStringSync();
 
           
-          
-          //File file = File(filename);
-          
-          // read file
-          //String contents = file.readAsStringSync();
-          
           List<String> contentList = contents.split(',');
           
           // print file
@@ -66,7 +60,6 @@ Future<void> writePriceMap(Map<String, List<String>> priceMap) async {
   final File file = File('assets/PriceMap.txt');
 
   //Clear the contents of the file
-  //await file.writeAsString('');
    await file.writeAsString('', mode: FileMode.writeOnly);
 
   //Write data to the file
