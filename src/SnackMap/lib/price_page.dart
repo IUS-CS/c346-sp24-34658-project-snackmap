@@ -65,7 +65,7 @@ class MyAppScreenState extends State<PricePage> {
             itemBuilder: (context, index) {
               //Get the item name
               List<String> parts = _priceMapList[index].split(':');
-              //Get name,price,and location
+              //Get name,price, and location
               String snackName = parts[0].trim();
               List<String> pricesAndLocations = parts[1].trim().split(',');
               //Remove white space
