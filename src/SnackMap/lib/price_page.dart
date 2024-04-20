@@ -1,11 +1,10 @@
-import 'dart:async';
-import 'dart:convert';
+import 'package:SnackMap/search_by_price.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'options_drawer.dart';
+import 'vending_machine_data_sheet_api.dart';
 
 class PricePage extends StatefulWidget {
-  const PricePage({super.key});
+  const PricePage({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
@@ -14,39 +13,41 @@ class PricePage extends StatefulWidget {
 }
 
 class MyAppScreenState extends State<PricePage> {
-  List<String> _priceMapList = [];
 
-  Future<List<String>> _loadpriceMapList() async {
-    List<String> priceMapList = [];
-    //Add each line in file to priceMapList
-    await rootBundle.loadString('assets/PriceMap.txt').then((q) {
-      for (String i in LineSplitter().convert(q)) {
-        priceMapList.add(i);
-      }
+
+  List<String> priceMapList = [];
+
+  List<String> loadpriceMapList() {
+    Map<String,List<String>> priceMap = SearchByPrice().sortByPrice(allVendingMap);
+    priceMap.forEach((key, value) {
+      String itemAndLocation = '$key : ';
+      String splitValue = value.join(', ');
+      itemAndLocation += splitValue;
+      priceMapList.add(itemAndLocation);
     });
     return priceMapList;
   }
 
   @override
   void initState() {
-    _setup();
+    setup();
     super.initState();
   }
 
-  _setup() async {
-    //Retrieve the priceMapList
-    List<String> priceMapList = await _loadpriceMapList();
+setup() async {
+  //Get the priceMapList
+  List<String> loadedPriceMapList = loadpriceMapList();
 
-    //Display the items in list
-    setState(() {
-      _priceMapList = priceMapList;
-    });
-  }
+  //Update the state with the loaded list
+  setState(() {
+    priceMapList = loadedPriceMapList;
+  });
+}
 
   @override
   Widget build(BuildContext context) {
     //Used to cycle though background colors
-    int _colorIndex = 0;
+    int colorIndex = 0;
 
     return Scaffold(
       //Add drawer
@@ -61,10 +62,10 @@ class MyAppScreenState extends State<PricePage> {
       body: Center(
         child: Container(
           child: ListView.builder(
-            itemCount: _priceMapList.length,
+            itemCount: priceMapList.length,
             itemBuilder: (context, index) {
               //Get the item name
-              List<String> parts = _priceMapList[index].split(':');
+              List<String> parts = priceMapList[index].split(':');
               //Get name,price, and location
               String snackName = parts[0].trim();
               List<String> pricesAndLocations = parts[1].trim().split(',');
@@ -81,8 +82,8 @@ class MyAppScreenState extends State<PricePage> {
               ];
 
               //Cycle through colors
-              Color backgroundColor = backgroundColors[_colorIndex];
-              _colorIndex = (_colorIndex + 1) % backgroundColors.length; 
+              Color backgroundColor = backgroundColors[colorIndex];
+              colorIndex = (colorIndex + 1) % backgroundColors.length; 
 
               return Container(
                 color: backgroundColor,

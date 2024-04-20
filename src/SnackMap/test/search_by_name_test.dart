@@ -1,15 +1,15 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fluttersnackmap/search_by_name.dart';
-import 'package:fluttersnackmap/read_and_write.dart';
+import 'package:SnackMap/search_by_name.dart';
+import 'package:SnackMap/vending_machine_data_sheet_api.dart';
 
 
 
-void main() {
+void main() async{
+  await VendingMachineDataSheetApi.init();
   test('Search by name map length', (){
-    Map<int,Map<String,String>> allVendingMap = readFile('assets/VendingInformation.txt');
     Map<String, String> temp = SearchByName().sortByName(allVendingMap);
     int actual = temp.length;
-    expect(actual,89); 
+    expect(actual,88); 
   });
 
 }

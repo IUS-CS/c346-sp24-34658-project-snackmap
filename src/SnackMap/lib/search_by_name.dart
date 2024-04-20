@@ -1,7 +1,4 @@
-import 'dart:ffi';
-import 'package:flutter/material.dart';
-import 'package:fluttersnackmap/get_individual_map_data.dart';
-import 'package:fluttersnackmap/search_by_name.dart';
+import 'get_individual_map_data.dart';
 
 
 class SearchByName {
