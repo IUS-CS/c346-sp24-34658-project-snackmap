@@ -1,12 +1,13 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:SnackMap/search_by_location.dart';
-import 'package:SnackMap/read_and_write.dart';
+import 'package:SnackMap/vending_machine_data_sheet_api.dart';
 
 
 
-void main() {
+
+void main() async{
+  await VendingMachineDataSheetApi.init();
   test('Search by location map length', (){
-    Map<int,Map<String,String>> allVendingMap = readFile('assets/VendingInformation.txt');
     Map<String, Map<String, dynamic>> temp = SearchByLocation().sortByLocation(allVendingMap);
     int actual = temp.length;
     expect(actual,27); 

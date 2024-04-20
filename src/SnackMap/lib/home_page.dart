@@ -1,7 +1,7 @@
-import 'package:SnackMap/about_us_page.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'options_drawer.dart';
+
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,97 +23,85 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MyHomePage> createState() => MyHomePageState();
 }
 
-
-class _MyHomePageState extends State<MyHomePage> {
-  //Used for testing
-  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-
-
-  late VideoPlayerController _controller;
-  bool _isVideoPlaying = false;
-  bool _isStartButtonVisible = true;
+class MyHomePageState extends State<MyHomePage> {
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+  late VideoPlayerController controller;
+  bool isVideoPlaying = false;
+  bool isStartButtonVisible = true;
 
   @override
   void initState() {
-    //Video to play
     super.initState();
-    _controller = VideoPlayerController.networkUrl(Uri.parse(
+
+    //Video controller
+    controller = VideoPlayerController.networkUrl(Uri.parse(
         "assets/SnackMapLogo.mp4"))
       ..initialize().then((_) {
         setState(() {});
       });
 
-
-    //Sees if video has played
-    _controller.addListener(() {
-      if (_controller.value.isPlaying && !_isVideoPlaying) {
+    //Video playback
+    controller.addListener(() {
+      if (controller.value.isPlaying && !isVideoPlaying) {
         setState(() {
-          _isVideoPlaying = true;
-          _isStartButtonVisible = false;
+          isVideoPlaying = true;
+          isStartButtonVisible = false;
         });
-      } else if (!_controller.value.isPlaying && _isVideoPlaying) {
+      } else if (!controller.value.isPlaying && isVideoPlaying) {
         setState(() {
-          _isVideoPlaying = false;
+          isVideoPlaying = false;
         });
       }
     });
 
-    _controller.setLooping(false);
+    controller.setLooping(false);
   }
-
-
 
   @override
   void dispose() {
-    _controller.dispose();
+    controller.dispose();
     super.dispose();
   }
 
-  //Remove start button and play video
-  void _startVideo() {
+  void startVideo() {
     setState(() {
-      _isStartButtonVisible = false;
+      isStartButtonVisible = false;
     });
-    _controller.play();
+    controller.play();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: _scaffoldKey,
+      key: scaffoldKey,
       drawer: OptionsDrawer(),
       appBar: AppBar(
         backgroundColor: const Color(0xff3A95D1),
         title: const Center(
           child: Text('SnackMap'),
-          
         ),
-
-        //used for testing
         leading: IconButton(
-        icon: Icon(Icons.menu),
-        onPressed: () {
-          _scaffoldKey.currentState?.openDrawer();
-        },
-        tooltip: 'Open menu',
-
-
-      ),
+          icon: Icon(Icons.menu),
+          onPressed: () {
+            scaffoldKey.currentState?.openDrawer();
+          },
+          tooltip: 'Open menu',
+        ),
       ),
       body: Stack(
         children: [
           Center(
-            child: _isVideoPlaying
-                ? AspectRatio(
-                    aspectRatio: _controller.value.aspectRatio,
-                    child: VideoPlayer(_controller),
+            child: isVideoPlaying
+                ?AspectRatio(
+                    aspectRatio: controller.value.aspectRatio,
+                    child: VideoPlayer(controller),
                   )
                 : SizedBox(),
           ),
-          if (!_isVideoPlaying && _isStartButtonVisible)
+          if (!isVideoPlaying && isStartButtonVisible)
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -123,18 +111,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(fontSize: 20),
                   ),
                   ElevatedButton(
-                    onPressed: _startVideo,
+                    onPressed: startVideo,
                     child: const Text('Play'),
                   ),
-
                 ],
               ),
             ),
         ],
       ),
-     
     );
-    
-  
   }
 }

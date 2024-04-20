@@ -1,20 +1,20 @@
 //? is in case allVending map is null so that code does not crash
 class GetData{
 
-  Map<String, String>? getVendingMachineMap(Map<int,Map<String,String>> allVendingMap,var vendingNum){
-    //if number of the vending machine exist
+  Map<String, dynamic>? getVendingMachineMap(Map<int,Map<String,dynamic>> allVendingMap,var vendingNum){
+    //If number of the vending machine exist
     if(vendingNum > 0 && vendingNum < 28 ){
       return(allVendingMap[vendingNum]);
     }
     return null;
   }
 
-  List<String> getSnackData(Map<int,Map<String,String>> allVendingMap){
+  List<String> getSnackData(Map<int,Map<String,dynamic>> allVendingMap){
     List<String> snackList = [];
   
     //For each vending number
     for(int vendingNum = 1; vendingNum < 28; vendingNum++){
-      Map<String,String> currentMap = {};
+      Map<String,dynamic> currentMap = {};
       String type = " ";
       currentMap = getVendingMachineMap(allVendingMap, vendingNum)!;
       int indexCounter = 1;
@@ -47,11 +47,11 @@ class GetData{
 
  }
 
-   List<String> getDrinkData(Map<int,Map<String,String>> allVendingMap){
+   List<String> getDrinkData(Map<int,Map<String,dynamic>> allVendingMap){
     List<String> drinkList = [];
   
     for(int vendingNum = 1; vendingNum < 28; vendingNum++){
-      Map<String,String> currentMap = {};
+      Map<String,dynamic> currentMap = {};
       String type = " ";
       currentMap = getVendingMachineMap(allVendingMap, vendingNum)!;
       int indexCounter = 1;
@@ -61,7 +61,7 @@ class GetData{
           if(type == "Drink"){
 
             if(drinkList.isNotEmpty){
-              //if key is not in list add it
+              //If key is not in list add it
               if(!drinkList.contains(key)){
                 drinkList.add(key);
               }

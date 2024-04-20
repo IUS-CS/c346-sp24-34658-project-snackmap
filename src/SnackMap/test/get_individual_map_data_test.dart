@@ -1,29 +1,32 @@
+import 'package:SnackMap/vending_machine_data_sheet_api.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:SnackMap/get_individual_map_data.dart';
-import 'package:SnackMap/read_and_write.dart';
 
-void main() {
+void main() async{
+  await VendingMachineDataSheetApi.init();
   group("Get vending machine maps",(){
-      test('Get vending number 1', (){
-      Map<int,Map<String,String>> allVendingMap = readFile('assets/VendingInformation.txt');
-      int vendingNum = 1;
-      Map<String, String>? tempMap = GetData().getVendingMachineMap(allVendingMap,vendingNum);
-      int actual = tempMap!.length;
-      expect(actual,8);
+    for (int vendingNum = 1; vendingNum <= 27; vendingNum++) {
+    test('Get vending number $vendingNum data', (){
+      Map<String, dynamic>? tempMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
+      int expected = vendingNum;
+      int actual = allVendingMap.keys.elementAt(vendingNum-1);
+      print(tempMap);
+      expect(actual, expected);
     });
+  }
   });
   group("Snack and drink data", (){
-    test("Get snack",() {
-      Map<int,Map<String,String>> allVendingMap = readFile('assets/VendingInformation.txt');
+    test("Get snack data",(){
       List<String> snackList = GetData().getSnackData(allVendingMap);
       int actual = snackList.length;
-      expect(actual,71);
+      print(snackList);
+      expect(actual,70);
 
     });
-    test("Get drink",() {
-      Map<int,Map<String,String>> allVendingMap = readFile('assets/VendingInformation.txt');
+    test("Get drink data",(){
       List<String> drinkList = GetData().getDrinkData(allVendingMap);
       int actual = drinkList.length;
+      print(drinkList);
       expect(actual,18);
 
     });

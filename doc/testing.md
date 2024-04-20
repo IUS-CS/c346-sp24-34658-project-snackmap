@@ -23,7 +23,10 @@ We will also continue to do unit test for all methods added to the project.
 
 ## Manuel Testing
 
-All widgets are tested manually and automatically. Manual testing of the widgets is done by ensuring that the widget is present and behaves correctly when interacted with by the user. 
+All widgets are tested manually with the backend code being tested automatically. Manual testing of the widgets is done by ensuring that the widget is present and behaves correctly when interacted with by the user. 
 
-main.dart while it does not have a specific test case if all other files ending in "page_test.dart" pass test then this file works as it is the start of the chain call to start the app. However, this is also manually tested by running the app.
+home_page.dart testing was done by checking that the page builds and there is a button that when pressed plays a video
 
+price_page.dart testing was done by checking that the page builds and that the widgets expand and show data.
+
+update_vending_machine_page.dart testing was done by checking the page builds and that each selection works. 

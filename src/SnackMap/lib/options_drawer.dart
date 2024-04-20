@@ -1,6 +1,8 @@
-import 'package:SnackMap/home_page.dart';
+import 'package:SnackMap/update_vending_machine_page.dart';
+import 'home_page.dart';
 import 'package:flutter/material.dart';
 import 'price_page.dart';
+
 
 class OptionsDrawer extends StatelessWidget {
   const OptionsDrawer({Key? key}) : super(key: key);
@@ -93,7 +95,7 @@ class OptionsDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => const HomePage()));
+                  builder: (context) => const UpdateVendingPage()));
             },
           ),
           ListTile(
@@ -108,6 +110,8 @@ class OptionsDrawer extends StatelessWidget {
             subtitle: const Text('Travel back to the home screen to learn how to use or learn more about us!'),
             onTap: () {
               Navigator.pop(context);
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => const HomePage()));
             },
           ),
 

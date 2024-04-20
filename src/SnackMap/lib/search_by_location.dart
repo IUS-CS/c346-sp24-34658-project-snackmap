@@ -13,7 +13,7 @@ class SearchByLocation {
 
     // For each vending machine
     for (int vendingNum = 1; vendingNum < 28; vendingNum++) {
-      Map<String, String>? currentMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
+      Map<String, dynamic>? currentMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
       if (currentMap != null) {
         // Extract location from currentMap
         String location = currentMap.keys.first.split(', ')[0];
@@ -39,7 +39,7 @@ class SearchByLocation {
     return locationMap;
   }
 
-  String getStatus(Map<String, String> currentMap) {
+  String getStatus(Map<String, dynamic> currentMap) {
     String status = 'Unknown';
     // Search for status field
     currentMap.forEach((key, value) {
@@ -50,7 +50,7 @@ class SearchByLocation {
     return status;
   }
 
-  Map<String, double> getItems(Map<String, String> currentMap) {
+  Map<String, double> getItems(Map<String, dynamic> currentMap) {
   Map<String, double> items = {};
   bool firstItem = true;
   // Extract items from currentMap

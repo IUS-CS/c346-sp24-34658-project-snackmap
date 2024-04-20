@@ -1,9 +1,7 @@
-import 'package:SnackMap/read_and_write.dart';
-
 import 'get_individual_map_data.dart';
 
 class SearchByPrice {
-  Map<String, List<String>> sortByPrice(Map<int, Map<String, String>> allVendingMap) {
+  Map<String, List<String>> sortByPrice(Map<int, Map<String, dynamic>> allVendingMap){
     List<String> snackList = GetData().getSnackData(allVendingMap);
     List<String> drinkList = GetData().getDrinkData(allVendingMap);
     Map<String, List<String>> itemMap = {};
@@ -19,26 +17,23 @@ class SearchByPrice {
       itemMap[drinkList[index]] = [];
     }
 
-    // For each vending machine
+    //For each vending machine
     for (int vendingNum = 1; vendingNum < 28; vendingNum++) {
-      Map<String, String>? currentMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
+      Map<String, dynamic>? currentMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
       if (currentMap != null) {
         currentMap.forEach((key, value) {
           //Skips the location and payment
           if (keyTracker > 2) {
-            // If the key is in the map
+            //If the key is in the map
             if (itemMap.containsKey(key)) {
               //Add price and location to list
-              if (itemMap[key]!.isEmpty ||
-                //If value is greater than the lowest price add to end of list
-                  double.parse(itemMap[key]![0]) < double.parse(value)) {
-                itemMap[key]!.add(value);
-                itemMap[key]!.add(currentMap.keys.first);
-                //If value is less than then add to front of list
-              } else if (double.parse(itemMap[key]![0]) >= double.parse(value)) {
-                itemMap[key]!.insert(0, value);
-                itemMap[key]!.insert(1, currentMap.keys.first);
-              }
+              if (itemMap[key]!.isEmpty || double.parse(itemMap[key]![0]) < double.parse(value.toString())) {
+                itemMap[key]!.add(value.toString());
+                 itemMap[key]!.add(currentMap.keys.first);
+              } else if (double.parse(itemMap[key]![0]) >= double.parse(value.toString())) {
+              itemMap[key]!.insert(0, value.toString());
+              itemMap[key]!.insert(1, currentMap.keys.first);
+             }
             }
           }
           keyTracker++;
@@ -48,12 +43,11 @@ class SearchByPrice {
 
     //Sort itemMap by the lowest value price
     final priceMap = Map.fromEntries(itemMap.entries.toList()
-      ..sort((e1, e2) => double.parse(e1.value[0]).compareTo(double.parse(e2.value[0]))));
+      ..sort((e1, e2) => e1.value[0].compareTo(e2.value[0])));
     
     
     
-    
-    writePriceMap(priceMap);
+
     return priceMap;
   }
 }
