@@ -1,11 +1,10 @@
-import 'dart:async';
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'options_drawer.dart';
+import 'vending_machine_data_sheet_api.dart';
+import 'search_by_location.dart';
 
 class LocationPage extends StatefulWidget {
-  const LocationPage({Key? key});
+  const LocationPage({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
@@ -14,75 +13,62 @@ class LocationPage extends StatefulWidget {
 }
 
 class LocationPageState extends State<LocationPage> {
-  List<String> locationList = [];
-
-  Future<List<String>> loadLocationList() async {
-    List<String> locationList = [];
-    //Add each line in file to locationList
-    await rootBundle.loadString('assets/LocationMap.txt').then((q) {
-      for (String i in LineSplitter().convert(q)) {
-        locationList.add(i);
-      }
-    });
-    return locationList;
-  }
+  late Map<String, List<String>> locationMap;
+  final List<Color> backgroundColors = [
+    const Color(0xff64C19D),
+    const Color(0xffFFFBFE),
+    const Color(0xffBDBEC0),
+  ];
 
   @override
   void initState() {
-    setup();
     super.initState();
+    setup();
   }
 
   setup() async {
-    List<String> locationList = await loadLocationList();
+    // Get the locationMap
+    Map<String, List<String>> sortedLocationMap = SearchByLocation().sortByLocation(allVendingMap);
 
-    //Display the locations in list
+    // Update the state with the sorted locationMap
     setState(() {
-      locationList = locationList;
+      locationMap = sortedLocationMap;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    //Used to cycle through background colors
-    int colorIndex = 0;
+    List<String> sortedLocations = locationMap.keys.toList()..sort();
 
     return Scaffold(
-      //Add drawer
+      // Add drawer
       drawer: const OptionsDrawer(),
       appBar: AppBar(
         backgroundColor: const Color(0xff3A95D1),
         title: const Center(
-          child: Text('Locations of Vending Machines'),
+          child: Text('Search For Snack or Drink By Location'),
         ),
       ),
       body: Center(
         child: Container(
           child: ListView.builder(
-            itemCount: locationList.length,
+            itemCount: sortedLocations.length,
             itemBuilder: (context, index) {
-              //Get the location name and details
-              List<String> parts = locationList[index].split(':');
-              //Get location and status
-              String locationName = parts[0].trim();
-              String status = parts[1].trim();
-
-              //Background colors
-              List<Color> backgroundColors = [
-                const Color(0xff64C19D),
-                const Color(0xffFFFBFE),
-                const Color(0xffBDBEC0),
-              ];
-
-              //Cycle through colors
-              Color backgroundColor = backgroundColors[colorIndex];
-              colorIndex = (colorIndex + 1) % backgroundColors.length;
+              String location = sortedLocations[index];
+              List<String> itemsAndPrices = locationMap[location]!;
+              Color backgroundColor = backgroundColors[index % backgroundColors.length];
 
               return Container(
                 color: backgroundColor,
-                child: ListTile(
-                  //Output location and status
-                  title: Text('$locationName - Status: $status', textAlign: TextAlign.start),
+                child: ExpansionTile(
+                  title: Text(location),
+                  children: <Widget>[
+                    for (String itemAndPrice in itemsAndPrices)
+                      ListTile(
+                        title: Text(itemAndPrice),
+                        tileColor: backgroundColor, // Set background color for ListTile
+                      ),
+                  ],
                 ),
               );
             },
