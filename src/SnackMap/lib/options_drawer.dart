@@ -52,6 +52,8 @@ class OptionsDrawer extends StatelessWidget {
             subtitle: const Text('Search for a drink or snack by location.'),
             onTap: () {
               Navigator.pop(context);
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => const LocationPage()));
             },
           ),
           ListTile(
