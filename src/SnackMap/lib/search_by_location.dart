@@ -1,70 +1,47 @@
-import 'package:SnackMap/get_individual_map_data.dart';
+import 'get_individual_map_data.dart';
 
 class SearchByLocation {
-  void printLocations(Map<String, Map<String, dynamic>> locationMap) {
-    locationMap.forEach((location, _) {
-      // ignore: avoid_print
-      print(location);
-    });
-  }
+  Map<String, List<String>> sortByLocation(Map<int, Map<String, dynamic>> allVendingMap) {
+    List<String> snackList = GetData().getSnackData(allVendingMap);
+    List<String> drinkList = GetData().getDrinkData(allVendingMap);
+    Map<String, List<String>> locationMap = {};
 
-  Map<String, Map<String, dynamic>> sortByLocation(Map<int, Map<String, String>> allVendingMap) {
-    Map<String, Map<String, dynamic>> locationMap = {};
-
-    // For each vending machine
+    // Add locations to locationMap
     for (int vendingNum = 1; vendingNum < 28; vendingNum++) {
       Map<String, dynamic>? currentMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
       if (currentMap != null) {
-        // Extract location from currentMap
-        String location = currentMap.keys.first.split(', ')[0];
-        // Extract status and items from currentMap
-        String status = getStatus(currentMap);
-        Map<String, double> items = getItems(currentMap);
-
-        // Add items to locationMap based on location
-        if (locationMap.containsKey(location)) {
-          // Merge items with existing location entry
-          locationMap[location]!['items'].addAll(items);
-        } else {
-          // Create a new location entry
-          locationMap[location] = {
-            'status': status,
-            'items': items,
-          };
-        }
+        String location = currentMap.keys.first;
+        locationMap[location] = [];
       }
     }
-    // ignore: avoid_print
-    print(locationMap);
-    return locationMap;
-  }
 
-  String getStatus(Map<String, dynamic> currentMap) {
-    String status = 'Unknown';
-    // Search for status field
-    currentMap.forEach((key, value) {
-      if (value.toLowerCase() == 'working' || value.toLowerCase() == 'out of order') {
-        status = value;
+    // Add items and prices under each location
+    for (int vendingNum = 1; vendingNum < 28; vendingNum++) {
+      Map<String, dynamic>? currentMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
+      if (currentMap != null) {
+        String location = currentMap.keys.first;
+        currentMap.forEach((key, value) {
+          if (snackList.contains(key) || drinkList.contains(key)) {
+            String price = value.toString();
+            locationMap[location]!.add('$key : \$$price');
+          }
+        });
       }
+    }
+
+    // Sort items and prices under each location
+    locationMap.forEach((key, value) {
+      value.sort((a, b) {
+        double priceA = double.parse(a.split(' : \$')[1]);
+        double priceB = double.parse(b.split(' : \$')[1]);
+        return priceA.compareTo(priceB);
+      });
     });
-    return status;
-  }
 
-  Map<String, double> getItems(Map<String, dynamic> currentMap) {
-  Map<String, double> items = {};
-  bool firstItem = true;
-  // Extract items from currentMap
-  currentMap.forEach((key, value) {
-    // Skip 'location' key and any key starting with 'accepts'
-    if (key.toLowerCase() != 'location' && !key.toLowerCase().startsWith('accepts')) {
-      // Skip the first item
-      if (!firstItem) {
-        // Add item to items map
-        items[key] = double.tryParse(value) ?? 0.0;
-      }
-      firstItem = false;
-    }
-  });
-  return items;
-}
+    // Sort locations alphabetically
+    var sortedKeys = locationMap.keys.toList()..sort();
+    var sortedLocationMap = Map.fromEntries(sortedKeys.map((key) => MapEntry(key, locationMap[key]!)));
+
+    return sortedLocationMap;
+  }
 }
