@@ -117,7 +117,7 @@ class OptionsDrawer extends StatelessWidget {
             },
           ),
           ListTile( 
-            leading: const Icon(Icons.map_sharp),
+            leading: const Icon(Icons.navigation),
             title: const Text(
               'How to Use',
               style: TextStyle(
