@@ -6,11 +6,11 @@
 ## Kaylyn McGehee
 This project offered a lot of learning opportunities and was a great experience in developing software. I was able to further develop my time management skills having to balance this semester long project, a second semester long project, normal school work, work, and my life outside of school/work. I enjoyed learning how to collaborate well on a project using Github. Before this, most of my experience on Github was from solo assignments. It was also a great way to get knowledge working with dart and VSCode. I had previously used VSCode exclusively for markdown assignments.
 Our tasks included brainstorming project ideas, completing sprint ceremonies, and assigning tasks. Our first few meetings were spent on coming up with a project idea and what we wanted that idea to look like. When each sprint ended, we filled out a Sprint Ceremony. We discussed what went good/bad, things we wanted to do better at as a group, and decided on more ideas to implement during the next sprint. Before starting on the next sprint, we would assign tasks for each member to complete. And the process repeated.
-###Meetings/Discussions: 
+### Meetings/Discussions: 
 To work effectively as a team, it was necessary for us to discuss the visions of this project and the details of the code being implemented. While meeting after class gave us sufficient time to discuss, having a server dedicated to the project made it easy to organize materials/discussions about SnackMap. It provided an easy way to ask questions outside of meetings and to give updates on our progress.
-###Writing Code: 
+### Writing Code: 
 When working on the code it was important to discuss with each other throughout the process. This ensured that everyone knew how each file connected and understood the general workings of the application. I tried to maintain a level of consistency in style with my other group member’s code, especially for classes that were meant to perform similar tasks (for example, the classes SearchByLocation and SearchByPrice). This was done by examining the code, discussing the code, and ensuring I understood what it accomplished.
-###Testing:
+### Testing:
 As we have learned in this course and throughout college, it is important to test as you go when writing code. Some of the tests I performed are unit tests implemented in the application. I also performed ‘print debugging’ tests to ensure the lists contained the correct information as I was working on the code. The print debugging is no longer written in the code as it has served its purpose. 
 
 ## Jessica Ward
