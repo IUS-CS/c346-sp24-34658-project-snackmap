@@ -116,7 +116,22 @@ class OptionsDrawer extends StatelessWidget {
                   builder: (context) => const HomePage()));
             },
           ),
-
+          ListTile( // Add ListTile for How to Use page
+            leading: const Icon(Icons.help),
+            title: const Text(
+              'How to Use',
+              style: TextStyle(
+                fontSize: 15.0,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            subtitle: const Text('Learn how to navigate the application!'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => HowToUsePage())); 
+            },
+          ),
         ],
       ),
     );
