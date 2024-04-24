@@ -116,8 +116,8 @@ class OptionsDrawer extends StatelessWidget {
                   builder: (context) => const HomePage()));
             },
           ),
-          ListTile( // Add ListTile for How to Use page
-            leading: const Icon(Icons.help),
+          ListTile( 
+            leading: const Icon(Icons.map_sharp),
             title: const Text(
               'How to Use',
               style: TextStyle(
