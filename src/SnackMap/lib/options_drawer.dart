@@ -2,6 +2,8 @@ import 'package:SnackMap/update_vending_machine_page.dart';
 import 'home_page.dart';
 import 'package:flutter/material.dart';
 import 'price_page.dart';
+import 'how_to_use_page.dart';
+import 'location_page.dart';
 
 
 class OptionsDrawer extends StatelessWidget {
