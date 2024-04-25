@@ -2,6 +2,9 @@ import 'package:SnackMap/update_vending_machine_page.dart';
 import 'home_page.dart';
 import 'package:flutter/material.dart';
 import 'price_page.dart';
+import 'how_to_use_page.dart';
+import 'location_page.dart';
+import 'map_page.dart';
 
 
 class OptionsDrawer extends StatelessWidget {
@@ -114,6 +117,22 @@ class OptionsDrawer extends StatelessWidget {
               Navigator.pop(context);
               Navigator.of(context).pushReplacement(MaterialPageRoute(
                   builder: (context) => const HomePage()));
+            },
+          ),
+          ListTile( 
+            leading: const Icon(Icons.map),
+            title: const Text(
+              'Map of IUS',
+              style: TextStyle(
+                fontSize: 15.0,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            subtitle: const Text('No clue where that building is? Us too.'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => IUSMapPage())); 
             },
           ),
           ListTile( 
