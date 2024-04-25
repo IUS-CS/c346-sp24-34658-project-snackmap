@@ -1,41 +1,56 @@
 import 'get_individual_map_data.dart';
 
 
+
+
 class SearchByName {
-  Map<String, String> sortByName(Map<int, Map<String, String>> allVendingMap) {
-    final snackList = GetData().getSnackData(allVendingMap);
-    final drinkList = GetData().getDrinkData(allVendingMap);
-    final itemMap = <String, String>{};
+  Map<String, List<String>> sortByName(Map<int, Map<String, String>> allVendingMap) {
+    List<String> snackList = GetData().getSnackData(allVendingMap);
+    List<String> drinkList = GetData().getDrinkData(allVendingMap);
+    String location = '';
+    Map<String, List<String>> itemMap = {};
+    List<String> tempLocation = [];
     
     // Populate itemMap with snacks
-    for (final snack in snackList) {
-      final location = snackLocation(allVendingMap, snack);
+    for (String snack in snackList) {
+       location = snackLocation(allVendingMap, snack)!;
       if (location != null) {
-        itemMap[snack] = location;
+        tempLocation.add(location);
       }
+      
+      itemMap[snack] = tempLocation;
+      tempLocation = [];
     }
 
-    // Populate itemMap with drinks
-    for (final drink in drinkList) {
-      final location = snackLocation(allVendingMap, drink);
+
+    for (String drink in drinkList) {
+       location = snackLocation(allVendingMap, drink)!;
       if (location != null) {
-        itemMap[drink] = location;
+         tempLocation.add(location);
       }
+      itemMap[drink] = tempLocation;
+      tempLocation = [];
     }
+
+
+   print(itemMap);
+
 
     return itemMap;
   }
 
+
   String? snackLocation(Map<int, Map<String, String>> allVendingMap, String item) {
+    String tempCurrent = '';
     for (int vendingNum = 1; vendingNum < 28; vendingNum++) {
-      final currentMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
+      Map<String, dynamic>? currentMap = GetData().getVendingMachineMap(allVendingMap, vendingNum);
       if (currentMap != null && currentMap.containsKey(item)) {
-        return currentMap.keys.first.split(', ')[0];
+        tempCurrent += '${currentMap.keys.first.split(', ')[0]}, ';
       }
     }
-    return null;
+      return tempCurrent;
   }
+
+
 }
-
-
 

@@ -5,6 +5,7 @@ import 'price_page.dart';
 import 'how_to_use_page.dart';
 import 'location_page.dart';
 import 'map_page.dart';
+import 'name_page.dart';
 
 
 class OptionsDrawer extends StatelessWidget {
@@ -41,6 +42,8 @@ class OptionsDrawer extends StatelessWidget {
             subtitle: const Text('Search for a drink or snack by name.'),
             onTap: () {
               Navigator.pop(context);
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+              builder: (context) => const NamePage()));
             },
           ),
           ListTile(
