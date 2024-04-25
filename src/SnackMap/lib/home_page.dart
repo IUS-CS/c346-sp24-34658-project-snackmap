@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'options_drawer.dart';
+import 'how_to_use_page.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -53,7 +54,9 @@ class MyHomePageState extends State<MyHomePage> {
       } else if (!controller.value.isPlaying && isVideoPlaying) {
         setState(() {
           isVideoPlaying = false;
+
         });
+        navigateToNewPage();
       }
     });
 
@@ -119,6 +122,12 @@ class MyHomePageState extends State<MyHomePage> {
             ),
         ],
       ),
+    );
+  }
+    void navigateToNewPage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => HowToUsePage()),
     );
   }
 }
