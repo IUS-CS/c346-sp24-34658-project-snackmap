@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'location_page.dart';
 import 'price_page.dart';
-//import 'name_page.dart';
+import 'name_page.dart';
 import 'update_vending_machine_page.dart';
 
 class HowToUsePage extends StatelessWidget {
@@ -79,10 +79,10 @@ class HowToUsePage extends StatelessWidget {
                     child: GestureDetector(
                       onTap: () {
                         // Navigate to the name page
-                       /* Navigator.push(
+                       Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => NamePage()),
-                        ); */
+                        );
                       },
                       child: Text(
                         '\'Find A Snack By Name\'',
