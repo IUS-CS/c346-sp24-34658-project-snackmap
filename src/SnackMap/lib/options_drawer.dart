@@ -107,15 +107,15 @@ class OptionsDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.question_mark),
+            leading: const Icon(Icons.home),
             title: const Text(
-              'More Information',
+              'Home',
               style: TextStyle(
                 fontSize: 15.0,
                 fontWeight: FontWeight.w600,
               ),
             ),
-            subtitle: const Text('Travel back to the home screen to learn how to use or learn more about us!'),
+            subtitle: const Text('Travel back to the home screen!'),
             onTap: () {
               Navigator.pop(context);
               Navigator.of(context).pushReplacement(MaterialPageRoute(
