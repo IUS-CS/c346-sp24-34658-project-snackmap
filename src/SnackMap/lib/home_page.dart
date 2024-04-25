@@ -1,3 +1,4 @@
+import 'package:SnackMap/how_to_use_page.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'options_drawer.dart';
@@ -53,8 +54,12 @@ class MyHomePageState extends State<MyHomePage> {
       } else if (!controller.value.isPlaying && isVideoPlaying) {
         setState(() {
           isVideoPlaying = false;
-        });
+          navigateToNewPage();
+
+
+      });
       }
+
     });
 
     controller.setLooping(false);
@@ -119,6 +124,13 @@ class MyHomePageState extends State<MyHomePage> {
             ),
         ],
       ),
+    );
+  }
+
+  void navigateToNewPage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => HowToUsePage()),
     );
   }
 }
